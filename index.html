@@ -6,70 +6,307 @@
 
     <!-- Stylesheets -->
     <link href="./assets/css/nav.css" rel="stylesheet">
+    <link href="./assets/css/front.css" rel="stylesheet">
     <link href="./assets/css/home.css" rel="stylesheet">
 
     <!-- Javascript -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/home.js"></script>
-    <script src="./assets/js/form_submission.js"></script>
+
+    <!-- Countdown -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/countdown.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/countdown.js"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100, 200, 900" rel="stylesheet">
 
 </head>
 <body>
-	<!-- Top Bar Script -->
-    <script src="assets/js/top-bar.js"></script>
+	
 
-
-
-    <div id = "page-wrapper" onclick="up();">
-        <div id = "front-background">
-            <div id = "front-presents">UC Berkeley Presents:</div>
-            <div id = "front-title">Unstoppable Forces</div>
-            <div id = "front-desc">Mastering the Elements of Leadership</div>
-            <div id = "front-rbc">PACHURH Regional Conference</div>
-            <div id = "front-date">February 23<sup>rd</sup>-25<sup>th</sup>, 2018</div>
+    <div class = "page-wrapper" id="page">
+    <br>
+    <br>
+        <div class="card" id="Welcome" style="transform: translate(-50%,-51%); opacity: 1;">
+            <div id="welcome-title">Welcome!</div>
+            <div class="welcome-card" id="gallery">
+                <div id="gallery-inside">
+                    <img class="gallery" src="./assets/img/cj.jpg" style="filter: saturate(1); opacity: 1;">
+                    <img class="gallery" src="./assets/img/housing.jpg" style="filter: saturate(1);">
+                    <img class="gallery" src="./assets/img/cj.jpg" style="filter: saturate(0);">
+                    <img class="gallery" src="./assets/img/housing.jpg" style="filter: saturate(0);">
+                </div>
+            </div>
+            <div class='countdown welcome-card' id="welcome-count" data-date="2018-02-23"></div>
+            <div class="welcome-card" id="quick-links">
+                Shortcuts
+                <div id="quick-ul">
+                    <ul>
+                        <li> Conference Things</li>
+                        <li> Registration</li>
+                        <li> About</li>
+                        <li> Contact</li>
+                        <li> Registration</li>
+                        <li> About</li>
+                        <li> Contact</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-            <input type="button" id = "button" value="Continue">
-    </div>
 
+        <div class="card" id="Conference">
+            <div class="title" style="background-color: red;">Conference<div class="cut"></div></div>
+            <div class="content" style="padding: 1.5% 2%">
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Schedule</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
+                </div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">FAQ</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
+                </div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Housing</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
+                </div>
 
-    <div id="page">
-    <br>
-    <br>
-        <div id="card">
-            <div id="title">Name</div>
-            <br>
-            <div>
-                
-                <div class="contact">
-                    <div class="profile"><img src="./assets/img/fb-icon.png"></div>
-                    <div class="name">Sentiment</div>
-                    <div class="link">People</div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Philanthropy</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
                 </div>
-                <div class="contact">
-                    <div class="profile"><img src="./assets/img/fb-icon.png"></div>
-                    <div class="name">Sentiment</div>
-                    <div class="link">People</div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Boardroom</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
                 </div>
-                <div class="contact">
-                    <div class="profile"><img src="./assets/img/fb-icon.png"></div>
-                    <div class="name">Sentiment</div>
-                    <div class="link">People</div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Dining</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
                 </div>
-                <div class="contact">
-                    <div class="profile"><img src="./assets/img/fb-icon.png"></div>
-                    <div class="name">Sentiment</div>
-                    <div class="link">People</div>
-                </div>
-                    
 
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Safety &<br>Sustainability</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
                 </div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Transportation</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
                 </div>
+                <div class="sub-page">
+                    <div class="sub-page-overlay">
+                        <div class="sub-page-name">Housing</div>
+                    </div>
+                    <img src="./assets/img/housing.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="Registration">
+            <div class="title" style="background-color: green;">Registration<div class="cut"></div></div>
+            <div class="content">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+            </div>
+        </div>
+        <div class="card" id="About">
+            <div class="title" style="background-color: blue;">About<div class="cut"></div></div>       
+            <div class="content" style="overflow: scroll;">
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Chelsea Ji</div>
+                        <div class="chair-position">Conference CoChair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">CJ Connolly</div>
+                        <div class="chair-position">Conference Co-Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Sandra Walle</div>
+                        <div class="chair-position">Finance Co-Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Amberlyn Saw</div>
+                        <div class="chair-position">Philanthropy and Sponsorship Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Danny Chu</div>
+                        <div class="chair-position">Technology and Media Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Desiree Nayak</div>
+                        <div class="chair-position">Registration Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Rachel Lin</div>
+                        <div class="chair-position">Housing Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Billy Alloca</div>
+                        <div class="chair-position">Logistics Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Alma Avila</div>
+                        <div class="chair-position">Hospitality and Sustainability Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Leah Clement</div>
+                        <div class="chair-position">Dining Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Elyse O'Neil</div>
+                        <div class="chair-position">Volunteer Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+                <div class="chair">
+                    <div class="chair-overlay">
+                        <div class="chair-name">Jeet Rai</div>
+                        <div class="chair-position">Safety and Transportation Chair</div>
+                    </div>
+                    <img src="./assets/img/cj.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="Contact">
+            <div class="title" style="background-color: gray;">Contact<div class="cut"></div></div>
+            <div class="content">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
         </div>
     </div>
 
+
+
+
+    <!-- Nav Bar -->
+    <div id="top-bar">
+        <!-- Logo -->
+        <div id="organization">
+            <div id="organization-logo" style="line-height: 30px;"  onclick="down()">
+                <!-- <img src="assets/img/logo.png"> -->
+                RBC
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav style="display: block">
+            <ul>
+                <li><a href="#" onclick=cardUp(0)>
+                    <div class="nav-title">Home</div>
+                </a></li>
+                <li><a href="#" onclick=cardUp(1)>
+                    <div class="nav-title">Schedule</div>
+                </a></li>
+                <li><a href="#" onclick=cardUp(1)>
+                    <div class="nav-title">Conference</div>
+                    <ul>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Schedule</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Boardroom</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Philanthropy</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Safety/Sustainability</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Transportation</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Housing</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Dining</div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="nav-subtitle">Facilities/Hospitality</div>
+                        </a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#" onclick=cardUp(2)>
+                    <div class="nav-title">Registration</div>
+                </a></li>
+                <li><a href="#" onclick=cardUp(3)>
+                    <div class="nav-title">About</div>
+                </a></li>
+                <li><a href="#" onclick=cardUp(4)>
+                    <div class="nav-title">Contact</div>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class = "page-wrapper" id = "page-wrapper">
+        <div id = "front-background" onclick="up();">
+            <div id = "first-select">
+                <div style = "border-left: black solid 1em; padding: 10px 20px;">
+                    <div class = "front-words" id = "front-pres">UC Berkeley Presents:</div>
+                    <div class = "front-words" id = "front-title">Unstoppable Forces</div>
+                    <div class = "front-words" id = "front-desc">Mastering the Elements of Leadership</div>
+                    <div class = "front-words" id = "front-rbc">PACHURH Regional Business Conference</div>
+                    <div class = "front-words" id = "front-date">February 23<sup>rd</sup>-25<sup>th</sup>, 2018</div>
+                </div>
+                <div class='countdown' style = "position: absolute; left: 50%; transform: translate(-50%, 25%);"" data-date="2018-02-23"></div>
+        
+                <div id = "up-button">Continue</div>
+            </div>
+            <div id = "second-select" style = "display: none">
+                <div class = "categories" onclick="up();" style = "background-color: rgba(255, 255, 255, .6);">Conference</div>
+                <div class = "categories" onclick="up();" style = "background-color: rgba(0, 176, 0, .6);">Registration</div>
+                <div class = "categories" onclick="up();" style = "background-color: rgba(0, 179, 256, .6);">About</div>
+                <div class = "categories" onclick="up();" style = "background-color: rgba(255, 45, 45, .6);">Contact/FAQ</div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

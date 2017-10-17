@@ -1,0 +1,132 @@
+/*Title Section*/
+.page-wrapper {
+	height: 100%;
+    width: 100%;
+    /*background-color: #34495e; */
+    overflow: hidden;
+
+	background: url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+	position: relative;
+
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	transition: 1.5s;
+
+	z-index: 100;
+}
+
+#front-background {
+	/*transform: translateX(15%);*/
+	/*margin: 10px;*/
+	/*padding: 40px 25px;
+	width: 75%;
+	height: 70%;
+	min-width: 100px;
+	min-height: 50px;*/
+	padding: 40px 0;
+	width: 0;
+	height: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	background-color: rgba(256, 256, 256, .6);
+	border-radius: 7px;
+	border-style: solid;
+    border-width: medium;	
+    border-color: white;
+
+	/*font-size: 2em;*/
+	text-align: left;
+	text-transform: uppercase;
+	font-family: Lato, sans-serif;
+	/*font-weight: bold;*/
+	transition: 1.5s;
+	/*transition: min-width 1.5s, width 1.5s ease-in, min-height 1s, height 1s, padding 2s;*/
+	overflow: hidden;
+}
+
+.front-words {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+#front-pres {
+	font-size: 30px;
+}
+
+#front-title {
+	font-size: 80px;
+	font-weight: 900;
+}
+
+#front-desc {
+	font-size: 30px;
+}
+
+#front-rbc {
+	font-size: 30px;
+	font-weight: 200;
+}
+
+#front-date {
+	font-size: 25px;
+}
+
+#front-date sup{
+	font-size: 15px;
+}
+
+#up-button {
+	/*position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);*/
+	width: 150px;
+	margin: 10em auto;
+	padding: 10px 20px;
+	border: black;
+
+	text-align: center;
+	font-size: 1.25em;
+
+	border-radius: .5em;
+	box-shadow: 1px 1px 1px #0d0d0d;
+
+	background-color: #de6868;
+	color: #f2f2f2;
+}
+
+/*
+.categories {
+	width: 41%;
+	height: 42%;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 4%;
+	line-height: 35vh;
+
+	font-size: 2em;
+
+}
+*/
+
+
+
+
+
