@@ -101,8 +101,8 @@ nav ul ul li a {
     float: left;
     padding: .75em 1em;
     transition: linear 0.2s;
-    -webkit-transition: linear 0.2s;
-    -moz-transition: linear 0.2s;
+
+    border-bottom: #464646 solid 0.25em; /*CHANGE IF CHANGING BACKGROUND COLOR*/
 
     /*font-family: 'Lato', sans-serif;
     letter-spacing: 2px;*/
@@ -112,8 +112,31 @@ nav ul ul li a {
     width: 100%;
 }
 
+.nav-subtitle:hover {
+    border-bottom: red solid 0.25em;
+}
+
 .nav-title:hover, .nav-subtitle:hover, #organization-logo:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
+/*Underlines*/
+#nav-white:hover{
+    border-bottom: white solid 0.25em;
+}
 
+#nav-grey:hover{
+    border-bottom: grey solid 0.25em;
+}
+
+#nav-red:hover{
+    border-bottom: red solid 0.25em;
+}
+
+#nav-blue:hover{
+    border-bottom: blue solid 0.25em;
+}
+
+#nav-green:hover{
+    border-bottom: green solid 0.25em;
+}

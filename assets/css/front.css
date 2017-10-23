@@ -55,7 +55,7 @@
 	text-transform: uppercase;
 	font-family: Lato, sans-serif;
 	/*font-weight: bold;*/
-	transition: 1.5s;
+	transition: .5s;
 	/*transition: min-width 1.5s, width 1.5s ease-in, min-height 1s, height 1s, padding 2s;*/
 	overflow: hidden;
 }

@@ -23,19 +23,19 @@ body {
     border-color: white;
     opacity: 0;
 
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgb(232, 232, 232);
     
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     text-align: right;
     overflow: hidden;
-    transition: 1s;
+    transition: 1s, width 2s;
 }
 
 .title {
 	position: absolute;
 	top: 3%;
-	left: 0;
+	left: 3.5%;
 	height: 100%;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,7 +50,8 @@ body {
     overflow: hidden;
 
 	background-color: rgba(255, 255, 139, .9);
-    width: 27%;
+    width: 20%;
+    line-height: 1.5em;
 }
 
 .cut {
@@ -60,7 +61,7 @@ body {
 	transform: rotate(45deg) translate(45%, 115%);
 	height: 10em;
 	width: 10em;
-	background-color: white;
+	background-color: rgb(232, 232, 232); /*CHANGE THIS TOO IF YOU CHANGED THE CARD'S BACKGROUND*/
 }
 
 .content {
@@ -254,4 +255,22 @@ body {
 	height: auto;
 }
 
+/*Registration*/
+.registration-needs {
+	background-color: rgba(211, 20, 24, .5); /*Default*/
+	margin-bottom: 2%;
+	height: 30%;
+	line-height: 25vh;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 300;
 
+	transition: .5s;
+}
+
+.sub-content {
+	height: 0;
+	overflow: hidden;
+	
+	transition: .5s;
+}

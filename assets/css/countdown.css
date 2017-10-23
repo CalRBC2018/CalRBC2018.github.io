@@ -2,7 +2,8 @@
 .countdown {
   font-family: 'Roboto';
   text-transform: uppercase;
-  min-width: 350px;
+  min-width: 335px;
+  text-align: center;
 }
 
 .countdown > div { display: inline-block; }

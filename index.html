@@ -28,7 +28,7 @@
     <div class = "page-wrapper" id="page">
     <br>
     <br>
-        <div class="card" id="Welcome" style="transform: translate(-50%,-51%); opacity: 1;">
+        <div class="card" id="Welcome" > <!-- style="transform: translate(-50%,-51%); opacity: 1;" -->
             <div id="welcome-title">Welcome!</div>
             <div class="welcome-card" id="gallery">
                 <div id="gallery-inside">
@@ -43,13 +43,13 @@
                 Shortcuts
                 <div id="quick-ul">
                     <ul>
-                        <li> Conference Things</li>
-                        <li> Registration</li>
-                        <li> About</li>
-                        <li> Contact</li>
-                        <li> Registration</li>
-                        <li> About</li>
-                        <li> Contact</li>
+                        <li onclick = "cardUp(1)"> Conference Things</li>
+                        <li onclick = "cardUp(2)"> Registration</li>
+                        <li onclick = "cardUp(3)"> About</li>
+                        <li onclick = "cardUp(4)"> Contact</li>
+                        <li onclick = "cardUp(2)"> Registration</li>
+                        <li onclick = "cardUp(3)"> About</li>
+                        <li onclick = "cardUp(4)"> Contact</li>
                     </ul>
                 </div>
             </div>
@@ -116,16 +116,22 @@
                 </div>
             </div>
         </div>
-        <div class="card" id="Registration">
+        <div class="card" id="Registration" style="transform: translate(-50%,-51%); opacity: 1;">
             <div class="title" style="background-color: green;">Registration<div class="cut"></div></div>
             <div class="content">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(211, 210, 24, .5);">
+                    <div>Register!</div>
+                    <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+                </div>
+                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">Information & Logistics</div>
+                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(21, 210, 24, .5);">Waivers</div>
+                
             </div>
         </div>
         <div class="card" id="About">
             <div class="title" style="background-color: blue;">About<div class="cut"></div></div>       
             <div class="content" style="overflow: scroll;">
+                <div class="about-title">Staff!</div>
                 <div class="chair">
                     <div class="chair-overlay">
                         <div class="chair-name">Chelsea Ji</div>
@@ -150,7 +156,7 @@
                 <div class="chair">
                     <div class="chair-overlay">
                         <div class="chair-name">Amberlyn Saw</div>
-                        <div class="chair-position">Philanthropy and Sponsorship Chair</div>
+                        <div class="chair-position">Philanthropy and <br> Sponsorship Chair</div>
                     </div>
                     <img src="./assets/img/cj.jpg">
                 </div>
@@ -178,14 +184,14 @@
                 <div class="chair">
                     <div class="chair-overlay">
                         <div class="chair-name">Billy Alloca</div>
-                        <div class="chair-position">Logistics Chair</div>
+                        <div class="chair-position">Facilities and <br> Logistics Chair</div>
                     </div>
                     <img src="./assets/img/cj.jpg">
                 </div>
                 <div class="chair">
                     <div class="chair-overlay">
                         <div class="chair-name">Alma Avila</div>
-                        <div class="chair-position">Hospitality and Sustainability Chair</div>
+                        <div class="chair-position">Hospitality and <br> Sustainability Chair</div>
                     </div>
                     <img src="./assets/img/cj.jpg">
                 </div>
@@ -206,10 +212,12 @@
                 <div class="chair">
                     <div class="chair-overlay">
                         <div class="chair-name">Jeet Rai</div>
-                        <div class="chair-position">Safety and Transportation Chair</div>
+                        <div class="chair-position">Safety and <br> Transportation Chair</div>
                     </div>
                     <img src="./assets/img/cj.jpg">
                 </div>
+                <div class="about-title">Advisors!</div>
+                <div class="about-title">Speaker!</div>
             </div>
         </div>
         <div class="card" id="Contact">
@@ -237,13 +245,13 @@
         <nav style="display: block">
             <ul>
                 <li><a href="#" onclick=cardUp(0)>
-                    <div class="nav-title">Home</div>
+                    <div class="nav-title" id="nav-white">Home</div>
                 </a></li>
                 <li><a href="#" onclick=cardUp(1)>
-                    <div class="nav-title">Schedule</div>
+                    <div class="nav-title" id="nav-red">Schedule</div>
                 </a></li>
                 <li><a href="#" onclick=cardUp(1)>
-                    <div class="nav-title">Conference</div>
+                    <div class="nav-title" id="nav-red">Conference</div>
                     <ul>
                         <li><a href="#">
                             <div class="nav-subtitle">Schedule</div>
@@ -272,20 +280,20 @@
                     </ul>
                 </a></li>
                 <li><a href="#" onclick=cardUp(2)>
-                    <div class="nav-title">Registration</div>
+                    <div class="nav-title" id="nav-green">Registration</div>
                 </a></li>
                 <li><a href="#" onclick=cardUp(3)>
-                    <div class="nav-title">About</div>
+                    <div class="nav-title" id="nav-blue">About</div>
                 </a></li>
                 <li><a href="#" onclick=cardUp(4)>
-                    <div class="nav-title">Contact</div>
+                    <div class="nav-title" id="nav-grey">Contact</div>
                 </a></li>
             </ul>
         </nav>
     </div>
 
 
-    <div class = "page-wrapper" id = "page-wrapper">
+    <!-- <div class = "page-wrapper" id = "page-wrapper">
         <div id = "front-background" onclick="up();">
             <div id = "first-select">
                 <div style = "border-left: black solid 1em; padding: 10px 20px;">
@@ -306,7 +314,6 @@
                 <div class = "categories" onclick="up();" style = "background-color: rgba(255, 45, 45, .6);">Contact/FAQ</div>
             </div>
         </div>
-        
-    </div>
+    </div> -->
 </body>
 </html>
