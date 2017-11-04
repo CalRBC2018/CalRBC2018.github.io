@@ -1,5 +1,7 @@
 $(document).ready(function() {
+    // $(document.getElementById("cover")).hide();
     open();
+    cardUp(4);
 });
 
 var curr = 1;
@@ -7,6 +9,11 @@ var prev;
 scrolled();
 
 function scrolled() {
+    scrolling();
+    setTimeout(scrolled, 5000); // Change image every 5 seconds
+}
+
+function scrolling() {
     var i;
     var gal = document.getElementsByClassName("gallery");
     prev = gal[curr-1];
@@ -14,7 +21,6 @@ function scrolled() {
     if (curr > gal.length) {curr = 1}    
     $(prev).css("opacity", "0");
     $(gal[curr-1]).css("opacity", "1");
-    setTimeout(scrolled, 3000); // Change image every 2 seconds
 }
 
 function up(){
@@ -61,25 +67,55 @@ function cardUp(number) {
         $(cards[x]).css("opacity", "0");
     }
 
-    $(cards[number]).css("transform", "translate(-50%, -51%)");
+    $(cards[number]).css("transform", "translate(-50%, -50%)");
     $(cards[number]).css("opacity", "1");
 }
 
+
+var opened = false;
 function subOpen(div) {
-    var title = $(div).html();
-    var siblings = $(div).siblings().css("height", "0");
-    var content = $(div).children(".sub-content");
-    $(div).css("height", "95%");
-    $(div).css("line-height", "12vh");
-    $(content).css("height", "500px");
-    console.log($(content).html());
-    // switch(title) {
-    // case "registration forms":
-        
-    //     break;
-    // case n:
-    //     code block
-    //     break;
-    // default:
-    //     console.log("Ya screwed up: " + title);
+    var card = $(div).parent().parent();
+    if (!opened) {
+        // var title = $(div).children(".sub-title").html();
+        card.children(".title").css({"height": "0", "padding":"0"});
+        card.children(".content").css({"height": "100%"});
+        var content = $(div).children(".sub-content");
+
+        $(div).parent().children().css({"height": "0", "margin-bottom": "0"});
+        $(div).css("height", "100%");
+        $(div).css("line-height", "12vh");
+        $(content).css("height", "500px");
+    } else{
+        reset(card);
+    }
+    opened = !opened;
 }
+
+function reset(card) {
+    card.children(".title").css({"height": "initial", "padding":"15px 0"});
+    var content = card.children(".content");
+    var sub_content = $(content).children().children(".sub-content");
+    $(content).css({"height": "85%"})
+    $(content).children().css({"line-height":"25vh", "height": "30%", "margin-bottom": "2%"});
+    $(sub_content).css("height", "0");
+}
+
+function fileUp(name) {
+    var $this = $(document.getElementById("cover"));
+    var $children = $this.children("#cover-container");
+    var $grandchildren = $children.children();
+    $($grandchildren).css("display", "none");
+    $($children.children("#cover-" + name)).css("display", "initial");
+    $this.css({"z-index" : "1000000000", "opacity" : "1"});
+    $this.css("opacity", "1");
+
+}
+
+function fileOut() {
+    $this = $(document.getElementById("cover"))
+    $this.css("opacity", "0");
+    setTimeout(function(){ $this.css("z-index", "0"); }, 400);
+    
+    // $this.children().html("<div class=\"cover-container\" ></div>");
+}
+

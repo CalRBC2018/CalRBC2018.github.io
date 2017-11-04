@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>PACURH Regional Business Conference</title>
-    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="icon" href="assets/img/favicon.ico">
 
     <!-- Stylesheets -->
     <link href="assets/css/nav.css" rel="stylesheet">
@@ -23,24 +23,26 @@
 
 </head>
 <body>
-	
-
+    
     <div class = "page-wrapper" id="page">
     <br>
     <br>
         <div class="card" id="Welcome"  style="transform: translate(-50%,-51%); opacity: 1;"> <!-- style="transform: translate(-50%,-51%); opacity: 1;" -->
-            <div id="welcome-title">Welcome!</div>
+            <div id="welcome-title">Welcome to the PACURH Regional Business Conference!</div>
             <div class="welcome-card" id="gallery">
                 <div id="gallery-inside">
-                    <img class="gallery" src="./assets/img/cj.jpg" style="filter: saturate(1); opacity: 1;">
-                    <img class="gallery" src="./assets/img/housing.jpg" style="filter: saturate(1);">
-                    <img class="gallery" src="./assets/img/cj.jpg" style="filter: saturate(0);">
-                    <img class="gallery" src="./assets/img/housing.jpg" style="filter: saturate(0);">
+                    <img class="gallery" src="assets/img/gallery/human_c.jpg" style="opacity: 1;">
+                    <img class="gallery" src="assets/img/gallery/campanile_bay.jpg">
+                    <img class="gallery" src="assets/img/gallery/unit_1.jpg">
+                    <img class="gallery" src="assets/img/gallery/sather_gate.jpg">
                 </div>
             </div>
-            <div class='countdown welcome-card' id="welcome-count" data-date="2018-02-23"></div>
+            <div class="welcome-card" id="welcome-count">
+                Time to Register!
+                <div class='countdown' data-date="2018-02-23"></div>
+            </div>
             <div class="welcome-card" id="quick-links">
-                Shortcuts
+                <!-- Shortcuts
                 <div id="quick-ul">
                     <ul>
                         <li onclick = "cardUp(1)"> Conference Things</li>
@@ -51,256 +53,326 @@
                         <li onclick = "cardUp(3)"> About</li>
                         <li onclick = "cardUp(4)"> Contact</li>
                     </ul>
-                </div>
+                </div> -->
+                <iframe src="https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&amp;app_id=304553036307597&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FhsBwMj6iLmk.js%3Fversion%3D42%23cb%3Df30297a768bf48%26domain%3Dwww.conference.nacurh.org%26origin%3Dhttps%253A%252F%252Fwww.conference.nacurh.org%252Ff1b582e700f861c%26relation%3Dparent.parent&amp;container_width=315&amp;height=575&amp;small_header=true&amp;hide_cover=false&amp;href=http%3A%2F%2Fwww.facebook.com%2F601124433324585&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;width=320" style="border: none; visibility: visible; width: 315px; height: 325px;" class=""></iframe>
+                <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPACURHRBC2018%2F&tabs=timeline&width=320&height=375&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
             </div>
         </div>
 
         <div class="card" id="Conference">
-            <div class="title" style="background-color: red;">Conference<div class="cut"></div></div>
-            <div class="content" style="padding: 1.5% 2%">
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+            <div class="title"><img src="./assets/img/fire.jpg">Conference<img src="./assets/img/fire.jpg"></div>
+            <div class="content">
+                <div class="sub-page" onclick="fileUp(&quot;Schedule&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(228, 0, 2, .6);">
                         <div class="sub-page-name">Schedule</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
-                        <div class="sub-page-name">FAQ</div>
+                <div class="sub-page" onclick="fileUp(&quot;Facilities&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 0, 204, .6);">
+                        <div class="sub-page-name">Facilities & Hospitality</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
-                </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
-                        <div class="sub-page-name">Housing</div>
-                    </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
 
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+                <div class="sub-page" onclick="fileUp(&quot;Philanthropy&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 204, 29, .6);">
                         <div class="sub-page-name">Philanthropy</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+                <div class="sub-page" onclick="fileUp(&quot;Boardroom&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(209, 209, 209, .6);">
                         <div class="sub-page-name">Boardroom</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+                <div class="sub-page" onclick="fileUp(&quot;Dining&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(125, 0, 2, .6);">
                         <div class="sub-page-name">Dining</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
 
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
-                        <div class="sub-page-name">Safety &<br>Sustainability</div>
+                <div class="sub-page" onclick="fileUp(&quot;Safety&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 0, 113, .6);">
+                        <div class="sub-page-name">Safety & Sustainability</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+                <div class="sub-page" onclick="fileUp(&quot;Transportation&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 82, 12, .6);">
                         <div class="sub-page-name">Transportation</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
-                <div class="sub-page">
-                    <div class="sub-page-overlay">
+                <div class="sub-page" onclick="fileUp(&quot;Housing&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(183, 183, 183, .6);"">
                         <div class="sub-page-name">Housing</div>
                     </div>
-                    <img src="./assets/img/housing.jpg">
+                    <img src="./assets/img/blank.jpg">
                 </div>
             </div>
         </div>
         <div class="card" id="Registration">
-            <div class="title" style="background-color: green;">Registration<div class="cut"></div></div>
+            <div class="title"><img src="./assets/img/earth.jpg">Registration<img src="./assets/img/earth.jpg"></div>
             <div class="content">
-                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(211, 210, 24, .5);">
-                    <div>Register!</div>
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(211, 210, 24, .5);">
+                    <div class="sub-title">Information & Logistics</div>
                     <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
                 </div>
-                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">Information & Logistics</div>
-                <div class="registration-needs" onclick="subOpen(this)" style="background-color: rgba(21, 210, 24, .5);">Waivers</div>
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="sub-title">Register!</div>
+                    <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+                </div>
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 210, 24, .5);">
+                    <div class="sub-title">Waivers</div>
+                    <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+                </div>
                 
             </div>
         </div>
         <div class="card" id="About">
-            <div class="title" style="background-color: blue;">About<div class="cut"></div></div>       
-            <div class="content" style="overflow: scroll;">
-                <div class="about-title">Staff!</div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Chelsea Ji</div>
-                        <div class="chair-position">Conference CoChair</div>
+            <div class="title"><img src="./assets/img/water.jpg">About<img src="./assets/img/water.jpg"></div>       
+            <div class="content">
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(116, 194, 225, .5);">
+                    <div class="sub-title">Staff!</div>
+                    <div class="sub-content"  style="overflow: scroll; font-size: .3em;">
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Chelsea Ji</div>
+                                <div class="chair-position">Conference CoChair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">CJ Connolly</div>
+                                <div class="chair-position">Conference Co-Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Sandra Walle</div>
+                                <div class="chair-position">Finance Co-Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Amberlyn Saw</div>
+                                <div class="chair-position">Philanthropy and <br> Sponsorship Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Danny Chu</div>
+                                <div class="chair-position">Technology and Media Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Desiree Nayak</div>
+                                <div class="chair-position">Registration Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Rachel Lin</div>
+                                <div class="chair-position">Housing Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Billy Alloca</div>
+                                <div class="chair-position">Facilities and <br> Logistics Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Alma Avila</div>
+                                <div class="chair-position">Hospitality and <br> Sustainability Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Jeah Clement</div>
+                                <div class="chair-position">Dining Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Elyse O'Neil</div>
+                                <div class="chair-position">Volunteer Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay">
+                                <div class="chair-name">Jeet Rai</div>
+                                <div class="chair-position">Safety and <br> Transportation Chair</div>
+                            </div>
+                            <img src="./assets/img/cj.jpg">
+                        </div>
                     </div>
-                    <img src="./assets/img/cj.jpg">
                 </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">CJ Connolly</div>
-                        <div class="chair-position">Conference Co-Chair</div>
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="sub-title">Cal NRHH & RHA!</div>
+                    <div class="sub-content" style="font-size: .5em;">
+                        <a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">NRHH</div>
+                                    <div class="chair-position">Golden Bear Chapter</div>
+                                </div>
+                                <img src="./assets/img/NRHH.jpg">
+                            </div>
+                        </a>
+                        <a href="http://reslife.berkeley.edu/opportunities/rha" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">RHA</div>
+                                    <div class="chair-position">ResHalls</div>
+                                </div>
+                                <img src="./assets/img/RHA.jpg">
+                            </div>
+                        </a>
                     </div>
-                    <img src="./assets/img/cj.jpg">
                 </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Sandra Walle</div>
-                        <div class="chair-position">Finance Co-Chair</div>
+                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(1, 145, 250, .5);">
+                    <div class="sub-title">Sponsors</div>
+                    <div class="sub-content">
+                        <img src="./assets/img/blank.jpg" style="height: 10em; width: 10em;">
                     </div>
-                    <img src="./assets/img/cj.jpg">
                 </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Amberlyn Saw</div>
-                        <div class="chair-position">Philanthropy and <br> Sponsorship Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Danny Chu</div>
-                        <div class="chair-position">Technology and Media Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Desiree Nayak</div>
-                        <div class="chair-position">Registration Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Rachel Lin</div>
-                        <div class="chair-position">Housing Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Billy Alloca</div>
-                        <div class="chair-position">Facilities and <br> Logistics Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Alma Avila</div>
-                        <div class="chair-position">Hospitality and <br> Sustainability Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Jeah Clement</div>
-                        <div class="chair-position">Dining Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Elyse O'Neil</div>
-                        <div class="chair-position">Volunteer Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="chair">
-                    <div class="chair-overlay">
-                        <div class="chair-name">Jeet Rai</div>
-                        <div class="chair-position">Safety and <br> Transportation Chair</div>
-                    </div>
-                    <img src="./assets/img/cj.jpg">
-                </div>
-                <div class="about-title">Advisors!</div>
-                <div class="about-title">Speaker!</div>
             </div>
         </div>
         <div class="card" id="Contact">
-            <div class="title" style="background-color: gray;">Contact<div class="cut"></div></div>
+            <div class="title"><img src="./assets/img/air.jpg">Contact<img src="./assets/img/air.jpg"></div>
             <div class="content">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScNHhWZBNjGKC0_puMBF8QCQwXIumrClpxqPfhH57ZOWuInNg/formResponse" target="hiddenFrame">
+
+                    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+                    <h2>Have Any Questions? Ask em!</h2>
+
+                    <p class="caption">Whats your name?</p>
+                    <textarea jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="YPqjbf" required="" name="entry.1244775209" dir="auto" data-initial-dir="auto"></textarea>
+                    
+                    <p class="caption">Whats your email?</p>
+                    <textarea jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="YPqjbf" required="" name="entry.1091466625" dir="auto" data-initial-dir="auto"></textarea>
+                    
+                    <p class="caption">Whats your concern?</p>
+                    <textarea jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="YPqjbf" required="" name="entry.649957690" dir="auto" data-initial-dir="auto"></textarea>
+                    <br>
+                    <input class="button" id="submit" type="submit" value="Submit" disabled="true">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
-
-
+    <div id="cover" onclick="fileOut();">
+        
+        <div id="cover-container">
+            <iframe id="cover-Schedule" src="https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Facilities" src="https://docs.google.com/document/d/e/2PACX-1vTTs-bgmTuRv4H5wRHMs9PwfrejdE5vWjIoze6khQS8_9LyklnoTBfvmQczuU2EGOpxbchSTqVartva/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Philanthropy"  src="https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Boardroom"  src="https://docs.google.com/document/d/e/2PACX-1vRNpflVgT7hRisHWzy3xjH-_QPZfJxgWUvwJ2RPPj9xoupFU9eglI5AaSdOIAxvU71GHhQ2PwxQmbC9/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Dining"  src="https://docs.google.com/document/d/e/2PACX-1vQ3wpvf5CA1RFcTwgLR6kV_dpAYIvOB7zcffBp_ZI3Jy1-7ESFKWVpiiyaVnPHqsasPYmVmmPzXEVNA/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Safety"  src="https://docs.google.com/document/d/e/2PACX-1vSeQNxVIhKRXkkq_laERnknpzzYmWFVCHaItcblNq2FaRng0i58fsBnya3-ByDKwyPgcWvApYgQrJ1m/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Transportation"  src="https://docs.google.com/document/d/e/2PACX-1vSp5R_JrV3CO1bLzzhDuFOmWo39ZVJdqaNupRMb9wWT4-gn0tQQC5y33AJevqqwpUlkM_jPolHkQPNS/pub?embedded=true" style="height: 100%; width: 100%;"></iframe>
+            <iframe id="cover-Housing"  src="https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true" style="height: 70%; width: 100%;"></iframe>
+        </div>
+    </div>
 
     <!-- Nav Bar -->
     <div id="top-bar">
         <!-- Logo -->
         <div id="organization">
-            <div id="organization-logo" style="line-height: 30px;"  onclick="down()">
-                <!-- <img src="assets/img/logo.png"> -->
-                RBC
+            <div id="organization-logo" onclick="down()">
+                <img src="assets/img/logo.png">
             </div>
         </div>
 
         <!-- Navbar -->
         <nav style="display: block">
             <ul>
-                <li><a href="#" onclick=cardUp(0)>
+                <li onclick=cardUp(0)>
                     <div class="nav-title" id="nav-white">Home</div>
-                </a></li>
-                <li><a href="#" onclick=cardUp(1)>
-                    <div class="nav-title" id="nav-red">Schedule</div>
-                </a></li>
-                <li><a href="#" onclick=cardUp(1)>
+                </li>
+                <li onclick=cardUp(1)>
                     <div class="nav-title" id="nav-red">Conference</div>
                     <ul>
-                        <li><a href="#">
+                        <li onclick="fileUp(&quot;Schedule&quot;);">
                             <div class="nav-subtitle">Schedule</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Boardroom&quot;);">
                             <div class="nav-subtitle">Boardroom</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Philanthropy&quot;);">
                             <div class="nav-subtitle">Philanthropy</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Safety&quot;);">
                             <div class="nav-subtitle">Safety/Sustainability</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Transportation&quot;);">
                             <div class="nav-subtitle">Transportation</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Housing&quot;);">
                             <div class="nav-subtitle">Housing</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Dining&quot;);">
                             <div class="nav-subtitle">Dining</div>
-                        </a></li>
-                        <li><a href="#">
+                        </li>
+                        <li onclick="fileUp(&quot;Facilities&quot;);">
                             <div class="nav-subtitle">Facilities/Hospitality</div>
-                        </a></li>
+                        </li>
                     </ul>
-                </a></li>
-                <li><a href="#" onclick=cardUp(2)>
+                </li>
+                <li onclick=cardUp(2)>
                     <div class="nav-title" id="nav-green">Registration</div>
-                </a></li>
-                <li><a href="#" onclick=cardUp(3)>
+                </li>
+                <li onclick=cardUp(3)>
                     <div class="nav-title" id="nav-blue">About</div>
-                </a></li>
-                <li><a href="#" onclick=cardUp(4)>
+                </li>
+                <li onclick=cardUp(4)>
                     <div class="nav-title" id="nav-grey">Contact</div>
-                </a></li>
+                </li>
             </ul>
         </nav>
     </div>
 
+    <div id = "social-media">
+        Connect!
+        <div class = "media">
+            <a href="https://www.facebook.com/PACURHRBC2018/" target="_blank"><img src="assets/img/media/facebook.png"></a>
+        </div>
+        <div class = "media">
+            <a href="https://twitter.com/PACURHRBC2018" target="_blank"><img src="assets/img/media/twitter.png"></a>
+        </div>
+        <!-- https://www.instagram.com/pacurh_rbc_2018/ -->
+        <div class = "media">
+            <a href="mailto:rbc.berkeley@gmail.com"><img src="assets/img/media/email.png"></a>
+        </div>
+    </div>
 
-    <div class = "page-wrapper" id = "page-wrapper">
+
+    <!-- <div class = "page-wrapper" id = "page-wrapper">
         <div id = "front-background" onclick="up();">
             <div id = "first-select">
                 <div style = "border-left: black solid 1em; padding: 10px 20px;">
                     <div class = "front-words" id = "front-pres">UC Berkeley Presents:</div>
                     <div class = "front-words" id = "front-title">Unstoppable Forces</div>
                     <div class = "front-words" id = "front-desc">Mastering the Elements of Leadership</div>
-                    <div class = "front-words" id = "front-rbc">PACHURH Regional Business Conference</div>
+                    <div class = "front-words" id = "front-rbc">PACURH Regional Business Conference</div>
                     <div class = "front-words" id = "front-date">February 23<sup>rd</sup>-25<sup>th</sup>, 2018</div>
                 </div>
                 <div class='countdown' style = "position: absolute; left: 50%; transform: translate(-50%, 25%);"" data-date="2018-02-23"></div>
@@ -314,6 +386,6 @@
                 <div class = "categories" onclick="up();" style = "background-color: rgba(255, 45, 45, .6);">Contact/FAQ</div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
