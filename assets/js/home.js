@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // $(document.getElementById("cover")).hide();
     open();
-    cardUp(4);
+    // cardUp(4);
 });
 
 var curr = 1;
