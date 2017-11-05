@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    // $(document.getElementById("cover")).hide();
     open();
-    // cardUp(4);
 });
 
 var curr = 1;
@@ -67,7 +65,7 @@ function cardUp(number) {
         $(cards[x]).css("opacity", "0");
     }
 
-    $(cards[number]).css("transform", "translate(-50%, -50%)");
+    $(cards[number]).css("transform", "translate(-50%, -51%)");
     $(cards[number]).css("opacity", "1");
 }
 
@@ -84,7 +82,7 @@ function subOpen(div) {
         $(div).parent().children().css({"height": "0", "margin-bottom": "0"});
         $(div).css("height", "100%");
         $(div).css("line-height", "12vh");
-        $(content).css("height", "500px");
+        $(content).css("height", "98%");
     } else{
         reset(card);
     }

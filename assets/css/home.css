@@ -3,6 +3,11 @@ body {
 	/*background: url("../img/background.png");*/
 }
 
+iframe {
+	width: 98%; 
+	height: 98%;
+}
+
 /*Social Media*/
 #social-media {
 	position: fixed;
@@ -40,7 +45,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, 100%);
     width: 65em;
-    height: 40em;
+    height: 38.5em;
     margin: 2em auto;
     box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.2);
     border: black;
@@ -130,7 +135,7 @@ body {
 	position: absolute;
 	top: 100px;
 	left: 5%;
-	height: 480px;
+	height: 465px;
 	width: 520px;
 }
 
@@ -162,7 +167,7 @@ body {
 	position: absolute;
 	height: 330px;
 	width: 32%;
-	top: 250px;
+	top: 235px;
 	right: 5%; 
 
     font-size: 2em;
@@ -217,6 +222,8 @@ body {
 
 #cover-container iframe {
 	display: none;
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -283,7 +290,7 @@ body {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	width: 32%;
+	width: 24%;
 }
 
 .chair-overlay {
@@ -328,13 +335,20 @@ body {
 	background-color: rgba(211, 20, 24, .5); /*Default*/
 	margin-bottom: 2%;
 	height: 30%;
-	line-height: 22vh;
-	text-align: center;
+	width: 100%;
 	font-size: 3em;
 	font-weight: 300;
 	overflow: hidden;
 
 	transition: .5s;
+	display: table;
+}
+
+.sub-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
 }
 
 .sub-content {
@@ -342,4 +356,77 @@ body {
 	overflow: hidden;
 
 	transition: .5s;
+}
+
+@media only screen and (max-width: 770px) {
+    .card {
+        height: 90%;
+        width: 100%;
+    	overflow: scroll;
+    }
+
+    .welcome-card {
+    	background-color: inherit;
+    	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7);
+    }
+
+    #gallery, #welcome-count {
+    	position: relative;
+    	margin: auto;
+    	right: 0;
+    	left: 0;
+    	margin-top: 50px;
+    }
+
+    #quick-links {
+    	display: none;
+    }
+
+    .content {
+    	overflow: scroll;
+    }
+
+    .sub-page {
+    	width: 24em;
+    	/*height: 24em;*/
+    }
+
+    #social-media {
+		position: fixed;
+	    width: 100%;
+	    background-color: #464646;
+	    color: #fff;
+	    z-index: 100;
+
+	    /*undo regular*/
+	    left: 0;
+	    top: 100%;
+	    transform: translateY(-100%);
+	    padding: 10px 0px;
+	}
+
+	#social-media span {
+		display: none;
+	}
+
+	.media {
+		height: 2em;
+		width: 2em;
+		margin: 0;
+		display: inline-block;
+	}
+
+	.media img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#cover {
+		/*position: fixed;*/
+	}
+
+	#cover-container {
+		height: 50%;
+		width: 100%;
+	}
 }

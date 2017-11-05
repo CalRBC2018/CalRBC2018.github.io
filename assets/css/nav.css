@@ -140,3 +140,15 @@ nav ul ul li a {
 #nav-green:hover{
     border-bottom: green solid 0.25em;
 }
+
+@media only screen and (max-width: 770px) {
+    #organization-logo {
+        display: none;
+    }
+
+    .card {
+        height: 90%;
+        width: 100%;
+    }
+
+}
