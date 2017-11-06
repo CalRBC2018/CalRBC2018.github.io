@@ -1,7 +1,7 @@
 $(document).ready(function() {
     open();
-    up();
-    cardUp(3);
+    // up();
+    // cardUp(3);
 });
 
 var curr = 1;
