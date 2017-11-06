@@ -1,5 +1,7 @@
 $(document).ready(function() {
     open();
+    up();
+    cardUp(3);
 });
 
 var curr = 1;
@@ -79,10 +81,12 @@ function subOpen(div) {
         card.children(".content").css({"height": "100%"});
         var content = $(div).children(".sub-content");
 
-        $(div).parent().children().css({"height": "0", "margin-bottom": "0"});
-        $(div).css("height", "100%");
-        $(div).css("line-height", "12vh");
-        $(content).css("height", "98%");
+        $(div).parent().children().css({"height": "0", "margin-bottom": "0", "display": "inherit"});
+        $(div).parent().children().children(".sub-title").css("display", "inherit");
+        $(div).parent().children().children(".sub-content").css("display", "none");
+        $(div).css({"height": "100%"});
+        // $(div).css("line-height", "12vh");
+        $(content).css({"height": "98%", "display": "inherit"});
     } else{
         reset(card);
     }
@@ -94,7 +98,10 @@ function reset(card) {
     var content = card.children(".content");
     var sub_content = $(content).children().children(".sub-content");
     $(content).css({"height": "85%"})
-    $(content).children().css({"line-height":"25vh", "height": "30%", "margin-bottom": "2%"});
+    $(content).children().css({"height": "30%", "margin-bottom": "2%", "display": "table"});
+    $(content).children().children(".sub-title").css("display", "table-cell");
+    $(content).children().children(".sub-content").css("display", "none");
+    // "line-height":"25vh",
     $(sub_content).css("height", "0");
 }
 

@@ -354,7 +354,7 @@ iframe {
 .sub-content {
 	height: 0;
 	overflow: hidden;
-
+	display: none;
 	transition: .5s;
 }
 
