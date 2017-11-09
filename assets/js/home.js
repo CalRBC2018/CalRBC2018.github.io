@@ -10,7 +10,7 @@ scrolled();
 
 function scrolled() {
     scrolling();
-    setTimeout(scrolled, 3000); // Change image every 3 seconds
+    setTimeout(scrolled, 5000); // Change image every 3 seconds
 }
 
 function scrolling() {

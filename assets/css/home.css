@@ -36,6 +36,21 @@ iframe {
 	height: 100%;
 }
 
+#notice {
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	width: 100px;
+	padding: 10px 5px;
+	background-color: black;
+	border-radius: 5px;
+	z-index: 1000000;
+
+	color: white;
+	text-align: center;
+}
+
 /*Page Background*/
 #page {
 	background: url("../img/background.png");
@@ -445,4 +460,14 @@ iframe {
 	.chair-position {
 		display: none;
 	}
+
+	#up-button {
+		display: none;
+	}
 }
+
+/*@media only screen and (max-width: 570px) {
+	.card {
+        height: 80%;
+    }
+}*/

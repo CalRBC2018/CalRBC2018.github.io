@@ -148,4 +148,8 @@ nav ul ul li a {
         display: none;
     }
 
+    nav {
+        font-size: 0.5em;
+    }
+
 }
