@@ -10,7 +10,7 @@ scrolled();
 
 function scrolled() {
     scrolling();
-    setTimeout(scrolled, 5000); // Change image every 5 seconds
+    setTimeout(scrolled, 3000); // Change image every 3 seconds
 }
 
 function scrolling() {
@@ -19,12 +19,12 @@ function scrolling() {
     prev = gal[curr-1];
     curr++;
     if (curr > gal.length) {curr = 1}    
-    $(prev).css("opacity", "0");
-    $(gal[curr-1]).css("opacity", "1");
+    $(prev).css({"opacity": "0", "z-index": "0"});
+    $(gal[curr-1]).css({"opacity": "1", "z-index": "10"});
 }
 
 function up(){
-    console.log(1);
+    // console.log(1);
     var $this = $(document.getElementById("page-wrapper"));
     // $(document.getElementById("loader-wrapper")).css("visibility", "inherit");
     $(document.getElementById("up-button")).css("opacity", ".5");
@@ -35,7 +35,7 @@ function up(){
 }
 
 function down(){
-    console.log(2);
+    // console.log(2);
     var $this = $(document.getElementById("page-wrapper"));
     // $(document.getElementById("loader-wrapper")).css("visibility", "inherit");
     $(document.getElementById("up-button")).css("opacity", "1");
@@ -74,6 +74,8 @@ function cardUp(number) {
 
 var opened = false;
 function subOpen(div) {
+    div = $(div).parent();
+    // console.log(div);
     var card = $(div).parent().parent();
     if (!opened) {
         // var title = $(div).children(".sub-title").html();
@@ -86,7 +88,7 @@ function subOpen(div) {
         $(div).parent().children().children(".sub-content").css("display", "none");
         $(div).css({"height": "100%"});
         // $(div).css("line-height", "12vh");
-        $(content).css({"height": "98%", "display": "inherit"});
+        $(content).css({"height": "95%", "display": "inherit"});
     } else{
         reset(card);
     }
@@ -100,7 +102,8 @@ function reset(card) {
     $(content).css({"height": "85%"})
     $(content).children().css({"height": "30%", "margin-bottom": "2%", "display": "table"});
     $(content).children().children(".sub-title").css("display", "table-cell");
-    $(content).children().children(".sub-content").css("display", "none");
+    $(sub_content).css("display", "none");
+    
     // "line-height":"25vh",
     $(sub_content).css("height", "0");
 }
@@ -109,16 +112,28 @@ function fileUp(name) {
     var $this = $(document.getElementById("cover"));
     var $children = $this.children("#cover-container");
     var $grandchildren = $children.children();
+    $($children).css("display", "initial");
     $($grandchildren).css("display", "none");
     $($children.children("#cover-" + name)).css("display", "initial");
     $this.css({"z-index" : "1000000000", "opacity" : "1"});
-    $this.css("opacity", "1");
+
+}
+
+function bioUp(name) {
+    var $this = $(document.getElementById("cover"));
+    var $children = $this.children("#cover-bios");
+    // $children.html() = "<img src=\"assets/img/team/Amberlyn.jpg\"><div id=\"info\"><div id=\"name\"><b>Name: </b> Amberlyn Saw</div><br><div id=\"pronouns\"><b>Pronouns: </b> She/Her</div><br><div id=\"position\"><b>Position: </b> Sponsorship</div></div><div id=\"bio\"></div>"
+    $($children).css("display", "initial");
+    $($children).children().css("display", "none");
+    $($children).children("#" + name).css("display", "initial");
+    $this.css({"z-index" : "1000000000", "opacity" : "1"});
 
 }
 
 function fileOut() {
     $this = $(document.getElementById("cover"))
     $this.css("opacity", "0");
+    $this.children().css("display", "none");
     setTimeout(function(){ $this.css("z-index", "0"); }, 400);
     
     // $this.children().html("<div class=\"cover-container\" ></div>");

@@ -23,6 +23,8 @@ ul, li {
     z-index: 100;
     border-bottom: #0d0d0d solid 0.05em;
     box-shadow: 2px 2px 4px #4D4D4D;
+
+    font-family: Raleway;
 }
 
 /*Logo*/
@@ -144,11 +146,6 @@ nav ul ul li a {
 @media only screen and (max-width: 770px) {
     #organization-logo {
         display: none;
-    }
-
-    .card {
-        height: 90%;
-        width: 100%;
     }
 
 }

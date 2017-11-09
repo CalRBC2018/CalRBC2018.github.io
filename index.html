@@ -22,6 +22,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100, 200, 900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <div class = "front-words" id = "front-rbc">PACURH Regional Business Conference</div>
                     <div class = "front-words" id = "front-date">February 23<sup>rd</sup>-25<sup>th</sup>, 2018</div>
                 </div>
-                <div class='countdown' style = "position: absolute; left: 50%; transform: translate(-50%, 25%);"" data-date="2018-02-23"></div>
+                <div class='countdown' id="countdown" style = "position: absolute; left: 50%; transform: translate(-50%, 25%);"" data-date="2018-02-23"></div>
         
                 <div id = "up-button">Continue</div>
             </div>
@@ -49,12 +50,23 @@
             <div id="welcome-title">Welcome to the PACURH Regional Business Conference!</div>
             <div class="welcome-card" id="welcome-count">
                 Time to Register!
-                <div class='countdown' data-date="2018-02-23"></div>
+                <div class='countdown' id="countdown2" data-date="2018-01-21"></div>
             </div>
 
             <div class="welcome-card" id="gallery">
                 <div id="gallery-inside">
-                    <img class="gallery" src="assets/img/gallery/human_c.jpg" style="opacity: 1;">
+
+                    <img class="gallery" src="assets/img/gallery/countdown_gallery.png" style="opacity: 1;" onclick="cardUp(2)">
+                    <img class="gallery" src="assets/img/gallery/staff.png" onclick="cardUp(3)">
+                    <a href="https://www.facebook.com/PACURHRBC2018/" target="_blank">
+                    <a href="https://twitter.com/PACURHRBC2018" target="_blank">
+                    <a href="https://www.instagram.com/pacurh_rbc_2018/" target="_blank"><img class="gallery" src="assets/img/gallery/instagram.png"></a>
+
+                    
+                    <img class="gallery" src="assets/img/gallery/facebook.png">
+                    <img class="gallery" src="assets/img/gallery/twitter.png">
+
+                    <img class="gallery" src="assets/img/gallery/human_c.jpg">
                     <img class="gallery" src="assets/img/gallery/campanile_bay.jpg">
                     <img class="gallery" src="assets/img/gallery/unit_1.jpg">
                     <img class="gallery" src="assets/img/gallery/sather_gate.jpg">
@@ -78,7 +90,6 @@
                 <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPACURHRBC2018%2F&tabs=timeline&width=320&height=375&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
             </div>
         </div>
-
         <div class="card" id="Conference">
             <div class="title"><img src="./assets/img/fire.jpg">Conference<img src="./assets/img/fire.jpg"></div>
             <div class="content">
@@ -135,131 +146,143 @@
             </div>
         </div>
         <div class="card" id="Registration">
-            <div class="title"><img src="./assets/img/earth.jpg">Registration<img src="./assets/img/earth.jpg"></div>
+            <div class="title"><img src="assets/img/water.jpg">Registration<img src="./assets/img/water.jpg"></div>
             <div class="content">
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(211, 210, 24, .5);">
-                    <div class="sub-title"><span>Information & Logistics</span></div>
-                    <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+                <div class="sub-card" style="background-color: rgba(116, 194, 225, .5);">
+                    <div class="sub-title" onclick="subOpen(this)"><span>Information & Logistics</span></div>
+                    <!-- <a href="assets/img/RBC_Registration_Checklist.pdf" download> -->
+                        <div class="sub-content">
+                            <div style="width: 100%; height:100%; overflow: scroll;">
+                                <a href="assets/img/RBC_Registration_Checklist.pdf" download><img src="assets/img/RBC_Registration_Checklist.jpg" style="width: 100%;"></a>
+                            </div>
+                        </div>
+                    <!-- </a> -->
                 </div>
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">
-                    <div class="sub-title">Register!</div>
-                    <div class="sub-content"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFvFtkjwduYJCYwtyeo8agq4NOVbzRqvz4iigqq__84o6P8w/viewform?embedded=true" width="98%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+                <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="sub-title" onclick="subOpen(this)">Register!</div>
+                    <div class="sub-content"> <iframe id="JotFormIFrame-72896479984181" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/72896479984181" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no"> </iframe> 
+                        <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-72896479984181"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
+                    </div>
                 </div>
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 210, 24, .5);">
-                    <div class="sub-title">Waivers</div>
+                <div class="sub-card" style="background-color: rgba(1, 145, 250, .5);">
+                    <div class="sub-title" onclick="subOpen(this)">Waivers</div>
                     <div class="sub-content"></div>
                 </div>
                 
             </div>
         </div>
         <div class="card" id="About">
-            <div class="title"><img src="./assets/img/water.jpg">About<img src="./assets/img/water.jpg"></div>       
+            <div class="title"><img src="assets/img/earth.jpg">About<img src="assets/img/earth.jpg"></div>       
             <div class="content">
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(116, 194, 225, .5);">
-                    <div class="sub-title">Staff!</div>
+                <div class="sub-card" style="background-color: rgba(211, 210, 24, .5);">
+                    <div class="sub-title" onclick="subOpen(this)">Staff!</div>
                     <div class="sub-content"  style="overflow: scroll; font-size: .3em;">
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Chelsea&quot;)">
                                 <div class="chair-name">Chelsea Ji</div>
                                 <div class="chair-position">Conference CoChair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Chelsea.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
-                                <div class="chair-name">CJ Connolly</div>
+                            <div class="chair-overlay" onclick="bioUp(&quot;CJ&quot;)">
+                                <div class="chair-name" onclick="bioUp(&quot;CJ&quot;)">CJ Connolly</div>
                                 <div class="chair-position">Conference Co-Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/CJ.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Sandra&quot;)">
                                 <div class="chair-name">Sandra Walle</div>
                                 <div class="chair-position">Finance Co-Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Sandra.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
-                                <div class="chair-name">Amberlyn Saw</div>
-                                <div class="chair-position">Philanthropy and <br> Sponsorship Chair</div>
-                            </div>
-                            <img src="assets/img/cj.jpg">
-                        </div>
-                        <div class="chair">
-                            <div class="chair-overlay">
-                                <div class="chair-name">Danny Chu</div>
-                                <div class="chair-position">Technology and Media Chair</div>
-                            </div>
-                            <img src="assets/img/cj.jpg">
-                        </div>
-                        <div class="chair">
-                            <div class="chair-overlay">
-                                <div class="chair-name">Desiree Nayak</div>
-                                <div class="chair-position">Registration Chair</div>
-                            </div>
-                            <img src="assets/img/cj.jpg">
-                        </div>
-                        <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Rachel&quot;)">
                                 <div class="chair-name">Rachel Lin</div>
                                 <div class="chair-position">Housing Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Rachel.jpg">
                         </div>
+                        
                         <div class="chair">
-                            <div class="chair-overlay">
-                                <div class="chair-name">Billy Alloca</div>
-                                <div class="chair-position">Facilities and <br> Logistics Chair</div>
+                            <div class="chair-overlay" onclick="bioUp(&quot;Danny&quot;)">
+                                <div class="chair-name">Danny Chu</div>
+                                <div class="chair-position">Technology and Media Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Danny.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Amberlyn&quot;)">
+                                <div class="chair-name">Amberlyn Saw</div>
+                                <div class="chair-position">Philanthropy and Sponsorship Chair</div>
+                            </div>
+                            <img src="assets/img/team/Amberlyn.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Alma&quot;)">
                                 <div class="chair-name">Alma Avila</div>
-                                <div class="chair-position">Hospitality and <br> Sustainability Chair</div>
+                                <div class="chair-position">Hospitality and Sustainability Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Alma.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Billy&quot;)">
+                                <div class="chair-name">Billy Alloca</div>
+                                <div class="chair-position">Facilities and Logistics Chair</div>
+                            </div>
+                            <img src="assets/img/team/Billy.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Desirée&quot;)">
+                                <div class="chair-name">Desirée Nayak</div>
+                                <div class="chair-position">Registration Chair</div>
+                            </div>
+                            <img src="assets/img/team/Desiree.jpg">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Jeah&quot;)">
                                 <div class="chair-name">Jeah Clement</div>
                                 <div class="chair-position">Dining Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Jeah.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Elyse&quot;)">
                                 <div class="chair-name">Elyse O'Neil</div>
                                 <div class="chair-position">Volunteer Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Elyse.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Jeet&quot;)">
                                 <div class="chair-name">Jeet Rai</div>
-                                <div class="chair-position">Safety and <br> Transportation Chair</div>
+                                <div class="chair-position">Safety and Transportation Chair</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Jeet.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Alex&quot;)">
                                 <div class="chair-name">Alex Brown</div>
                                 <div class="chair-position">Awesome Advisor</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Alex.jpg">
                         </div>
                         <div class="chair">
-                            <div class="chair-overlay">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Tanya&quot;)">
                                 <div class="chair-name">Tanya Koroyan</div>
                                 <div class="chair-position">Awesome Advisor</div>
                             </div>
-                            <img src="assets/img/cj.jpg">
+                            <img src="assets/img/team/Tanya.jpg">
                         </div>
+                        <br>
+                        <br>
+                        <br>
                     </div>
                 </div>
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(21, 20, 24, .5);">
-                    <div class="sub-title">Cal NRHH & RHA!</div>
+                <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="sub-title" onclick="subOpen(this)">Cal NRHH & RHA!</div>
                     <div class="sub-content" style="font-size: .5em;">
                         <a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
                             <div class="chair">
@@ -281,8 +304,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="sub-card" onclick="subOpen(this)" style="background-color: rgba(1, 145, 250, .5);">
-                    <div class="sub-title">Sponsors</div>
+                <div class="sub-card" style="background-color: rgba(21, 210, 24, .5);">
+                    <div class="sub-title" onclick="subOpen(this)">Sponsors</div>
                     <br>
                     <div class="sub-content">
                         <img src="./assets/img/blank.jpg" style="height: 10em; width: 10em;">
@@ -307,11 +330,11 @@
                     <p class="caption">What's your email?</p>
                     <input jscontroller="pxq3x" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="entry.1091466625" dir="auto" data-initial-dir="auto">
                     
-                    <p class="caption">What's this about? (ie. Housing, Facilities, etc.)</p>
+                    <p class="caption">What's your institution/school?</p>
                     <input jscontroller="pxq3x" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="entry.786901840" dir="auto" data-initial-dir="auto">
                     <br>
 
-                    <p class="caption">Whats your concern?</p>
+                    <p class="caption">How can we help you?</p>
                     <textarea jscontroller="gZjhIf" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="YPqjbf" required="" name="entry.649957690" dir="auto" data-initial-dir="auto"></textarea>
                     <br>
                     <input class="button" type="submit" value="Submit">
@@ -338,12 +361,168 @@
         <div id="cover-container">
             <iframe id="cover-Schedule" src="https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true"></iframe>
             <iframe id="cover-Facilities" src="https://docs.google.com/document/d/e/2PACX-1vTTs-bgmTuRv4H5wRHMs9PwfrejdE5vWjIoze6khQS8_9LyklnoTBfvmQczuU2EGOpxbchSTqVartva/pub?embedded=true"></iframe>
-            <iframe id="cover-Philanthropy"  src="https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true"></iframe>
-            <iframe id="cover-Boardroom"  src="https://docs.google.com/document/d/e/2PACX-1vRNpflVgT7hRisHWzy3xjH-_QPZfJxgWUvwJ2RPPj9xoupFU9eglI5AaSdOIAxvU71GHhQ2PwxQmbC9/pub?embedded=true"></iframe>
-            <iframe id="cover-Dining"  src="https://docs.google.com/document/d/e/2PACX-1vQ3wpvf5CA1RFcTwgLR6kV_dpAYIvOB7zcffBp_ZI3Jy1-7ESFKWVpiiyaVnPHqsasPYmVmmPzXEVNA/pub?embedded=true"></iframe>
-            <iframe id="cover-Safety"  src="https://docs.google.com/document/d/e/2PACX-1vSeQNxVIhKRXkkq_laERnknpzzYmWFVCHaItcblNq2FaRng0i58fsBnya3-ByDKwyPgcWvApYgQrJ1m/pub?embedded=true"></iframe>
-            <iframe id="cover-Transportation"  src="https://docs.google.com/document/d/e/2PACX-1vSp5R_JrV3CO1bLzzhDuFOmWo39ZVJdqaNupRMb9wWT4-gn0tQQC5y33AJevqqwpUlkM_jPolHkQPNS/pub?embedded=true"></iframe>
-            <iframe id="cover-Housing"  src="https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true"></iframe>
+            <iframe id="cover-Philanthropy" src="https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true"></iframe>
+            <iframe id="cover-Boardroom" src="https://docs.google.com/document/d/e/2PACX-1vRNpflVgT7hRisHWzy3xjH-_QPZfJxgWUvwJ2RPPj9xoupFU9eglI5AaSdOIAxvU71GHhQ2PwxQmbC9/pub?embedded=true"></iframe>
+            <iframe id="cover-Dining" src="https://docs.google.com/document/d/e/2PACX-1vQ3wpvf5CA1RFcTwgLR6kV_dpAYIvOB7zcffBp_ZI3Jy1-7ESFKWVpiiyaVnPHqsasPYmVmmPzXEVNA/pub?embedded=true"></iframe>
+            <iframe id="cover-Safety" src="https://docs.google.com/document/d/e/2PACX-1vSeQNxVIhKRXkkq_laERnknpzzYmWFVCHaItcblNq2FaRng0i58fsBnya3-ByDKwyPgcWvApYgQrJ1m/pub?embedded=true"></iframe>
+            <iframe id="cover-Transportation" src="https://docs.google.com/document/d/e/2PACX-1vSp5R_JrV3CO1bLzzhDuFOmWo39ZVJdqaNupRMb9wWT4-gn0tQQC5y33AJevqqwpUlkM_jPolHkQPNS/pub?embedded=true"></iframe>
+            <iframe id="cover-Housing" src="https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true"></iframe>
+        </div>
+        <div id="cover-bios">
+            <div class="bio" id="Chelsea">
+                <img src="assets/img/team/Chelsea.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Chelsea Ji</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Conference Co-Chair</div>
+                </div>
+                <div id="bio">Hello! My name is Chelsea and I'm excited to serve as co-chair for the Regional Business Conference! I'm a third year studying Integrative Biology. I also serve as a Resident Assistant and Vice President of Recognitions for the Golden Bear Chapter of NRHH. My passion and involvement with PACURH began when I attended conferences as a NCC. I’ve always loved representing my school in boardroom and hearing about all the great things happening in residential communities across PACURH. Now I’m excited to bring the Regional Business Conference to Berkeley and show PACURH what Cal is all about. Our conference team has worked tirelessly to deliver a truly unique experience for you and I’m sure that it won’t disappoint! As always, go bears!</div>
+            </div>
+            <div class="bio" id="CJ">
+                <img src="assets/img/team/CJ.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> CJ Connolly</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Conference Co-Chair</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Amberlyn Saw and I am the Philanthropy and Sponsorships Chair. I’m a 3rd year double majoring in Business Administration and Molecular Environmental Biology with a concentration in Environment and Human Health. I’m a second-year RA in Unit 3, the place to be! In my free time, I love road tripping to national parks and spending time outdoors camping, backpacking, and running. If I’m not in my room napping, there’s a good chance I’m searching for the best chai latte in Berkeley, baking brownies in the kitchen, or procrastinating on homework by hiking in the Bay Area. On campus, I’m a mentor for Boost @Haas, a director for the ASUC Office of the CTO, and a member of National Residence Hall Honorary. I am beyond thrilled to be a part of this conference and I can’t wait to meet all of you in February!</div>
+            </div>
+            <div class="bio" id="Desirée">
+                <img src="assets/img/team/Desiree.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Desirée Nayak</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Registration Chair</div>
+                </div>
+                <div id="bio">Hey everyone, my name is Desirée Nayak and I am the Registration Chair for the PACURH Regional Business Conference, 2018. I am a sophomore at UC Berkeley, intending to pursue a degree in Cognitive Science. I am from Mumbai, India and lived there pretty much all my life, till I moved here for college. I love to travel and am also a certified scuba diver. When I am not overthinking everything and/ or contemplating life, you will usually find me watching law dramas or psychological thrillers. I am part of the Peer Review Board which is an organisation that deals with policy violations in the residence halls. I am also doing some interesting psychological research at our law school. I look forward to seeing and interacting with all of you (both virtually, through the (rather lengthy) registration form, and also in person, of course). I am very excited for the conference and really looking forward to February! </div>
+            </div>
+            <div class="bio" id="Danny">
+                <img src="assets/img/team/Danny.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Danny Chu</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> He/Him</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Technology & Media Chair</div>
+                </div>
+                <div id="bio">Hi y'all! Name's Danny Chu, a casual EECS major. Talk to me about memes. </div>
+            </div>
+            <div class="bio" id="Rachel">
+                <img src="assets/img/team/Rachel.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Rachel Lin</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Housing</div>
+                </div>
+                <div id="bio">Hey y’all! My name is Rachel Lin and I am the Housing Chair for RBC! I am a second-year student intending to double major in Business Administration and Cognitive Science. I’m an out of state student from the great state of Maryland, like twenty minutes outside Baltimore and an hour from Washington D.C. On campus, I’m involved in the student government, National Residence Hall Honorary, and Space Enterprise! In my free time, I love watching the TV show Survivor, petting cats, and drinking boba. Last year, I was RHA Rep for my residence hall, where I had the opportunity to attend RLC at USC, RBC at UoP, and NACURH at Purdue University. Can’t wait to see you all in February!!</div>
+            </div>
+            <div class="bio" id="Billy">
+                <img src="assets/img/team/Billy.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Billy Alloca</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> He/Him</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Facilities & Logistics Chair</div>
+                </div>
+                <div id="bio">Hey there!! I’m Billy Allocca, a sophomore at Cal, a Resident Assistant, avid dog lover, and Facilities and Logistics chair. I’m planning on majoring in Business Administration. My hometown is Seattle, Washington and some of my hobbies include hiking, exploring, adventures, binge-watching Parks and Recreation, and running. I’ve been involved with Residential Life ever since Hall Association as a freshman, through PACURH 2016, and now as an RA and chair for RBC! I’m so excited to share this amazing school with all of you at this conference - see you in February!</div>
+            </div>
+            <div class="bio" id="Jeet">
+                <img src="assets/img/team/Jeet.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Jeet Rai</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Transportation & Safety Chair</div>
+                </div>
+                <div id="bio">Hi! My name is Jeet Rai and I am the Transportation and Safety Chair for the Regional Business Conference. I am a second year at Cal and have declared a Political Science major with an intended Journalism minor. When I am not writing emails and attending meetings, I enjoy spontaneous adventures to Oregon, Nevada, the Berkeley Hills and San Francisco to stargaze and hike. I love learning new languages, pouring over different publications and jamming to music in my free time. On campus, I am the Director of Advocacy for the United Nations Association of Berkeley, a Distribution Analyst at The Daily Californian and the Student Supervisor at Unit 3 Residence Halls. As a freshman, I had the honor of serving as president of Hall Association. I love meeting new people and look forward to seeing you soon! </div>
+            </div>
+            <div class="bio" id="Elyse">
+                <img src="assets/img/team/Elyse.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Elyse O'Neil</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Volunteer Chair</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Amberlyn Saw and I am the Philanthropy and Sponsorships Chair. I’m a 3rd year double majoring in Business Administration and Molecular Environmental Biology with a concentration in Environment and Human Health. I’m a second-year RA in Unit 3, the place to be! In my free time, I love road tripping to national parks and spending time outdoors camping, backpacking, and running. If I’m not in my room napping, there’s a good chance I’m searching for the best chai latte in Berkeley, baking brownies in the kitchen, or procrastinating on homework by hiking in the Bay Area. On campus, I’m a mentor for Boost @Haas, a director for the ASUC Office of the CTO, and a member of National Residence Hall Honorary. I am beyond thrilled to be a part of this conference and I can’t wait to meet all of you in February!</div>
+            </div>
+            <div class="bio" id="Alma">
+                <img src="assets/img/team/Alma.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Alma Avila</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Sponsorship</div>
+                </div>
+                <div id="bio"></div>
+            </div>
+            <div class="bio" id="Sandra">
+                <img src="assets/img/team/Sandra.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Sandra Walle</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Sponsorship</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Sandra Walle and I am the Finance Chair for the Regional Business Conference. I am very passionate about Res Life and grateful that I have the opportunity to work with so many amazing peers to help make Cal a place students can call home. In the Res Halls I work as a Resident Assistant and also serve as the VP of Finance and Communications for the National Residence Hall Honorary (NRHH) Golden Bear Chapter. I am a third year student majoring in Public Health with a double minor in Spanish Literature and Public Policy. On campus I am involved with the Undergraduate Public Health Coalition, work as a Research Assistant in a Psychology lab and volunteer as a  Health Advocate through the Alameda Health System. In my free time I enjoy playing board games, tennis, grabbing coffee with friends, and exploring the bay area in search of cute and tasty brunch spots.  I am so excited to be a part of the conference planning team and can't wait to see you all in February! </div>
+            </div>
+            <div class="bio" id="Amberlyn">
+                <img src="assets/img/team/Amberlyn.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Amberlyn Saw</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Sponsorship Chair</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Amberlyn Saw and I am the Philanthropy and Sponsorships Chair. I’m a 3rd year double majoring in Business Administration and Molecular Environmental Biology with a concentration in Environment and Human Health. I’m a second-year RA in Unit 3, the place to be! In my free time, I love road tripping to national parks and spending time outdoors camping, backpacking, and running. If I’m not in my room napping, there’s a good chance I’m searching for the best chai latte in Berkeley, baking brownies in the kitchen, or procrastinating on homework by hiking in the Bay Area. On campus, I’m a mentor for Boost @Haas, a director for the ASUC Office of the CTO, and a member of National Residence Hall Honorary. I am beyond thrilled to be a part of this conference and I can’t wait to meet all of you in February!</div>
+            </div>
+            <div class="bio" id="Jeah">
+                <img src="assets/img/team/Jeah.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Jeah Clement</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Dining Chair</div>
+                </div>
+                <div id="bio"></div>
+            </div>
+            <div class="bio" id="Alex">
+                <img src="assets/img/team/Alex.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Alex Brown</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Advisor</div>
+                </div>
+                <div id="bio"></div>
+            </div>
+            <div class="bio" id="Tanya">
+                <img src="assets/img/team/Tanya.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Tanya Koroyan</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Advisor</div>
+                </div>
+                <div id="bio"></div>
+            </div>
         </div>
     </div>
 
@@ -352,7 +531,7 @@
         <!-- Logo -->
         <div id="organization">
             <div id="organization-logo" onclick="down()">
-                <img src="assets/img/logo.png">
+                <img src="assets/img/logo2.jpg">
             </div>
         </div>
 
@@ -392,10 +571,10 @@
                     </ul>
                 </li>
                 <li onclick=cardUp(2)>
-                    <div class="nav-title" id="nav-green">Registration</div>
+                    <div class="nav-title" id="nav-blue">Registration</div>
                 </li>
                 <li onclick=cardUp(3)>
-                    <div class="nav-title" id="nav-blue">About</div>
+                    <div class="nav-title" id="nav-green">About</div>
                 </li>
                 <li onclick=cardUp(4)>
                     <div class="nav-title" id="nav-grey">Contact</div>
