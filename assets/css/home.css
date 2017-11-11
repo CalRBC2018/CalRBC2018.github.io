@@ -34,6 +34,7 @@ iframe {
 .media img {
 	width: 100%;
 	height: 100%;
+	border-radius: 50%;
 }
 
 #notice {
@@ -53,6 +54,7 @@ iframe {
 
 /*Page Background*/
 #page {
+	background-color: black;
 	background: url("../img/background.png");
 }
 .card {

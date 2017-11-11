@@ -4,7 +4,8 @@
     width: 100%;
     /*background-color: #34495e; */
     overflow: hidden;
-
+    
+	background-color: black;
 	background: url(../img/background.jpg) no-repeat center;
     background-size: cover;
 	position: relative;
