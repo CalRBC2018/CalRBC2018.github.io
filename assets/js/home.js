@@ -128,7 +128,7 @@ function fileUp(name) {
     var $children = $this.children("#cover-container");
     var $grandchildren = $children.children();
     $($children).css("display", "initial");
-    // $($grandchildren).css("display", "none");
+    $($grandchildren).css("display", "none");
     $($children.children("#cover-" + name)).css("display", "initial");
     $this.css({"z-index" : "1000000000", "opacity" : "1"});
 
