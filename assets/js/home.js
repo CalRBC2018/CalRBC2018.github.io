@@ -3,8 +3,8 @@ $(document).ready(function() {
     elem = document.getElementById("cover-bios");
     elem.addEventListener("click", stopEvent, false);
     fileOut();
-    up();
-    cardUp(3);
+    // up();
+    // cardUp(3);
 });
 
 function stopEvent(ev) {
