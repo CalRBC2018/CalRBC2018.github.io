@@ -360,6 +360,7 @@ iframe {
 
 /*Registration*/
 .sub-card {
+	position: relative;
 	background-color: rgba(211, 20, 24, .5); /*Default*/
 	margin-bottom: 2%;
 	height: 30%;
@@ -386,7 +387,23 @@ iframe {
 	transition: .5s;
 }
 
-@media only screen and (max-width: 770px) {
+.back {
+	position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: .5em;
+    padding: 5px;
+    border: 1px solid black;
+    display: none;
+    cursor: default;
+}
+
+.back:hover {
+	background-color: black;
+	color: white;
+}
+
+@media only screen and (max-width: 1050px) {
     .card {
         height: 90%;
         width: 100%;
@@ -467,6 +484,11 @@ iframe {
 	}
 }
 
+@media only screen and (max-width: 820px) {
+	#welcome-title-end {
+		display: none;
+	}
+}
 /*@media only screen and (max-width: 570px) {
 	.card {
         height: 80%;

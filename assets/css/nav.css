@@ -116,6 +116,7 @@ nav ul ul li a {
 
 .nav-subtitle:hover {
     border-bottom: red solid 0.25em;
+    cursor: default;
 }
 
 .nav-title:hover, .nav-subtitle:hover, #organization-logo:hover {
@@ -143,13 +144,28 @@ nav ul ul li a {
     border-bottom: green solid 0.25em;
 }
 
+@media only screen and (max-width: 1050px) {
+    #top-bar {
+        display: none;
+    }
+
+}
+
 @media only screen and (max-width: 770px) {
     #organization-logo {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
     nav {
         font-size: 0.5em;
     }
+}
 
+@media only screen and (max-width: 550px) {
+    nav {
+        font-size: 0.75em;
+    }
 }

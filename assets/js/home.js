@@ -1,8 +1,15 @@
 $(document).ready(function() {
     open();
-    // up();
-    // cardUp(3);
+    elem = document.getElementById("cover-bios");
+    elem.addEventListener("click", stopEvent, false);
+    fileOut();
+    up();
+    cardUp(3);
 });
+
+function stopEvent(ev) {
+  ev.stopPropagation();
+}
 
 var curr = 1;
 var prev;
@@ -71,6 +78,10 @@ function cardUp(number) {
     $(cards[number]).css("opacity", "1");
 }
 
+function backSub(div) {
+    console.log("Q");
+    subOpen($(div).siblings(".sub-title"));
+}
 
 var opened = false;
 function subOpen(div) {
@@ -82,14 +93,18 @@ function subOpen(div) {
         card.children(".title").css({"height": "0", "padding":"0"});
         card.children(".content").css({"height": "100%"});
         var content = $(div).children(".sub-content");
+        var $everythingElse = $(div).parent().children()
+        $everythingElse.css({"height": "0", "margin-bottom": "0", "display": "inherit"});
+        $everythingElse.children(".sub-title").css("display", "inherit");
+        $everythingElse.children(".sub-content").css("display", "none");
+        $(div).children(".back").css("display", "inherit");
 
-        $(div).parent().children().css({"height": "0", "margin-bottom": "0", "display": "inherit"});
-        $(div).parent().children().children(".sub-title").css("display", "inherit");
-        $(div).parent().children().children(".sub-content").css("display", "none");
         $(div).css({"height": "100%"});
         // $(div).css("line-height", "12vh");
         $(content).css({"height": "95%", "display": "inherit"});
-    } else{
+    } else{   
+        $(div).children(".back").css("display", "none");
+        card.children(".back").css({"display": "none"});
         reset(card);
     }
     opened = !opened;
@@ -134,7 +149,8 @@ function fileOut() {
     $this = $(document.getElementById("cover"))
     $this.css("opacity", "0");
     $this.children().css("display", "none");
-    setTimeout(function(){ $this.css("z-index", "0"); }, 400);
+    // $this.children().children("#exit").css("display", "inherit");
+    setTimeout(function(){ $this.css("z-index", "0"); }, 100);
     
     // $this.children().html("<div class=\"cover-container\" ></div>");
 }

@@ -47,7 +47,7 @@
     <br>
     <br>
         <div class="card" id="Welcome"  style="transform: translate(-50%,-51%); opacity: 1;"> <!-- style="transform: translate(-50%,-51%); opacity: 1;" -->
-            <div id="welcome-title">Welcome to the PACURH Regional Business Conference!</div>
+            <div id="welcome-title">Welcome <span id="welcome-title-end">to the PACURH Regional Business Conference!</span> </div>
             <div class="welcome-card" id="welcome-count">
                 Time to Register!
                 <div class='countdown' id="countdown2" data-date="2018-01-21"></div>
@@ -153,6 +153,7 @@
             <div class="title"><img src="assets/img/water.jpg">Registration<img src="./assets/img/water.jpg"></div>
             <div class="content">
                 <div class="sub-card" style="background-color: rgba(116, 194, 225, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)"><span>Information & Logistics</span></div>
                     <!-- <a href="assets/img/RBC_Registration_Checklist.pdf" download> -->
                         <div class="sub-content">
@@ -163,12 +164,14 @@
                     <!-- </a> -->
                 </div>
                 <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)">Register!</div>
                     <div class="sub-content"> <iframe id="JotFormIFrame-72896479984181" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/72896479984181" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no"> </iframe> 
                         <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-72896479984181"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
                     </div>
                 </div>
                 <div class="sub-card" style="background-color: rgba(1, 145, 250, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)">Waivers</div>
                     <div class="sub-content"></div>
                 </div>
@@ -179,35 +182,36 @@
             <div class="title"><img src="assets/img/earth.jpg">About<img src="assets/img/earth.jpg"></div>       
             <div class="content">
                 <div class="sub-card" style="background-color: rgba(211, 210, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)">Staff!</div>
                     <div class="sub-content"  style="overflow: scroll; font-size: .3em;">
                         <div class="chair">
-                            <div class="chair-overlay" onclick="bioUp(&quot;Chelsea&quot;)">
+                            <div class="chair-overlay">
                                 <div class="chair-name">Chelsea Ji</div>
                                 <div class="chair-position">Conference CoChair</div>
                             </div>
-                            <img src="assets/img/team/Chelsea.jpg">
+                            <img src="assets/img/team/Chelsea.jpg" onclick="bioUp(&quot;Chelsea&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;CJ&quot;)">
-                                <div class="chair-name" onclick="bioUp(&quot;CJ&quot;)">CJ Connolly</div>
+                                <div class="chair-name">CJ Connolly</div>
                                 <div class="chair-position">Conference Co-Chair</div>
                             </div>
-                            <img src="assets/img/team/CJ.jpg">
+                            <img src="assets/img/team/CJ.jpg" onclick="bioUp(&quot;CJ&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Sandra&quot;)">
                                 <div class="chair-name">Sandra Walle</div>
                                 <div class="chair-position">Finance Chair</div>
                             </div>
-                            <img src="assets/img/team/Sandra.jpg">
+                            <img src="assets/img/team/Sandra.jpg" onclick="bioUp(&quot;Sandra&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Rachel&quot;)">
                                 <div class="chair-name">Rachel Lin</div>
                                 <div class="chair-position">Housing Chair</div>
                             </div>
-                            <img src="assets/img/team/Rachel.jpg">
+                            <img src="assets/img/team/Rachel.jpg" onclick="bioUp(&quot;Rachel&quot;)">
                         </div>
                         
                         <div class="chair">
@@ -215,70 +219,70 @@
                                 <div class="chair-name">Danny Chu</div>
                                 <div class="chair-position">Technology and Media Chair</div>
                             </div>
-                            <img src="assets/img/team/Danny.jpg">
+                            <img src="assets/img/team/Danny.jpg" onclick="bioUp(&quot;Danny&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Amberlyn&quot;)">
                                 <div class="chair-name">Amberlyn Saw</div>
                                 <div class="chair-position">Philanthropy and Sponsorship Chair</div>
                             </div>
-                            <img src="assets/img/team/Amberlyn.jpg">
+                            <img src="assets/img/team/Amberlyn.jpg" onclick="bioUp(&quot;Amberlyn&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Alma&quot;)">
                                 <div class="chair-name">Alma Avila</div>
                                 <div class="chair-position">Hospitality and Sustainability Chair</div>
                             </div>
-                            <img src="assets/img/team/Alma.jpg">
+                            <img src="assets/img/team/Alma.jpg" onclick="bioUp(&quot;Alma&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Billy&quot;)">
                                 <div class="chair-name">Billy Allocca</div>
                                 <div class="chair-position">Facilities and Logistics Chair</div>
                             </div>
-                            <img src="assets/img/team/Billy.jpg">
+                            <img src="assets/img/team/Billy.jpg" onclick="bioUp(&quot;Billy&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Desirée&quot;)">
                                 <div class="chair-name">Desirée Nayak</div>
                                 <div class="chair-position">Registration Chair</div>
                             </div>
-                            <img src="assets/img/team/Desiree.jpg">
+                            <img src="assets/img/team/Desiree.jpg" onclick="bioUp(&quot;Desirée&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Jeah&quot;)">
                                 <div class="chair-name">Jeah Clemente</div>
                                 <div class="chair-position">Dining and Banquet Chair</div>
                             </div>
-                            <img src="assets/img/team/Jeah.jpg">
+                            <img src="assets/img/team/Jeah.jpg" onclick="bioUp(&quot;Jeah&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Elyse&quot;)">
                                 <div class="chair-name">Elyse O'Neil</div>
                                 <div class="chair-position">Volunteer Chair</div>
                             </div>
-                            <img src="assets/img/team/Elyse.jpg">
+                            <img src="assets/img/team/Elyse.jpg" onclick="bioUp(&quot;Elyse&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Jeet&quot;)">
                                 <div class="chair-name">Jeet Rai</div>
                                 <div class="chair-position">Safety and Transportation Chair</div>
                             </div>
-                            <img src="assets/img/team/Jeet.jpg">
+                            <img src="assets/img/team/Jeet.jpg" onclick="bioUp(&quot;Jeet&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Alex&quot;)">
                                 <div class="chair-name">Alex Brown</div>
                                 <div class="chair-position">Awesome Advisor</div>
                             </div>
-                            <img src="assets/img/team/Alex.jpg">
+                            <img src="assets/img/team/Alex.jpg" onclick="bioUp(&quot;Alex&quot;)">
                         </div>
                         <div class="chair">
                             <div class="chair-overlay" onclick="bioUp(&quot;Tanya&quot;)">
                                 <div class="chair-name">Tanya Koroyan</div>
                                 <div class="chair-position">Awesome Advisor</div>
                             </div>
-                            <img src="assets/img/team/Tanya.jpg">
+                            <img src="assets/img/team/Tanya.jpg" onclick="bioUp(&quot;Tanya&quot;)">
                         </div>
                         <br>
                         <br>
@@ -286,6 +290,7 @@
                     </div>
                 </div>
                 <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)">Cal NRHH & RHA!</div>
                     <div class="sub-content" style="font-size: .5em;">
                         <a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
@@ -309,6 +314,7 @@
                     </div>
                 </div>
                 <div class="sub-card" style="background-color: rgba(21, 210, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
                     <div class="sub-title" onclick="subOpen(this)">Sponsors</div>
                     <br>
                     <div class="sub-content">
@@ -366,9 +372,9 @@
         </div>
     </div>
 
-    <div id="cover" onclick="fileOut();">
-        
+    <div id="cover" onclick="fileOut();" >
         <div id="cover-container">
+            <div id="exit" style="color:white; position: absolute; top: -25px; left: 0px;">X</div>
             <iframe id="cover-Schedule" src="https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true"></iframe>
             <iframe id="cover-Facilities" src="https://docs.google.com/document/d/e/2PACX-1vTTs-bgmTuRv4H5wRHMs9PwfrejdE5vWjIoze6khQS8_9LyklnoTBfvmQczuU2EGOpxbchSTqVartva/pub?embedded=true"></iframe>
             <iframe id="cover-Philanthropy" src="https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true"></iframe>
@@ -379,6 +385,7 @@
             <iframe id="cover-Housing" src="https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true"></iframe>
         </div>
         <div id="cover-bios">
+            <div id="exit" style="color:white; position: absolute; top: -25px; left: 0px;">X</div>
             <div class="bio" id="Chelsea">
                 <img src="assets/img/team/Chelsea.jpg">
                 <div id="info">
