@@ -399,8 +399,8 @@ iframe {
 }
 
 .back:hover {
-	background-color: black;
-	color: white;
+	background-color: rgba(0, 0, 0, .2);
+	color: black;
 }
 
 @media only screen and (max-width: 1050px) {
