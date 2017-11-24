@@ -3,8 +3,8 @@ $(document).ready(function() {
     elem = document.getElementById("cover-bios");
     elem.addEventListener("click", stopEvent, false);
     fileOut();
-    up();
-    cardUp(3);
+    // up();
+    // cardUp(3);
 });
 
 function stopEvent(ev) {
@@ -128,7 +128,7 @@ function fileUp(name) {
     var $children = $this.children("#cover-container");
     var $grandchildren = $children.children();
     $($children).css("display", "initial");
-    $($grandchildren).css("display", "none");
+    // $($grandchildren).css("display", "none");
     $($children.children("#cover-" + name)).css("display", "initial");
     $this.css({"z-index" : "1000000000", "opacity" : "1"});
 
@@ -140,6 +140,7 @@ function bioUp(name) {
     // $children.html() = "<img src=\"assets/img/team/Amberlyn.jpg\"><div id=\"info\"><div id=\"name\"><b>Name: </b> Amberlyn Saw</div><br><div id=\"pronouns\"><b>Pronouns: </b> She/Her</div><br><div id=\"position\"><b>Position: </b> Sponsorship</div></div><div id=\"bio\"></div>"
     $($children).css("display", "initial");
     $($children).children().css("display", "none");
+    $($children).children("#exit").css("display", "initial");
     $($children).children("#" + name).css("display", "initial");
     $this.css({"z-index" : "1000000000", "opacity" : "1"});
 
@@ -149,6 +150,7 @@ function fileOut() {
     $this = $(document.getElementById("cover"))
     $this.css("opacity", "0");
     $this.children().css("display", "none");
+    // $this.children("#exit")
     // $this.children().children("#exit").css("display", "inherit");
     setTimeout(function(){ $this.css("z-index", "0"); }, 100);
     
