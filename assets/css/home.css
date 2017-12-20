@@ -501,12 +501,19 @@ iframe {
 	}
 
 	.information {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	height: 35%; 
-	overflow: scroll;
-}
+		position: relative;
+		text-align: center;
+		width: 100%;
+		height: 35%; 
+		overflow: scroll;
+	}
+
+	.chair {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 70%;
+	}
 }
 /*@media only screen and (max-width: 570px) {
 	.card {
