@@ -7,6 +7,10 @@ $(document).ready(function() {
     // cardUp(3);
 });
 
+function noticeDisappear() {
+    $(document.getElementById("notice")).css("display", "none");
+}
+
 function stopEvent(ev) {
   ev.stopPropagation();
 }

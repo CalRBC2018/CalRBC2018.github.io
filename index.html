@@ -59,7 +59,7 @@
                     
                     <img class="gallery" src="assets/img/gallery/countdown_gallery.png"  style="opacity: 1;"onclick="cardUp(2)">
                     <a href="https://docs.google.com/presentation/d/1MVSbIo2zQUV9xYZF_ZMFRbnBzt9hrsp-4gWYYHsw3zE/edit?usp=sharing" target="_blank"><img class="gallery" src="assets/img/gallery/RLCUpdate.png"></a>
-                    <img class="gallery" src="assets/img/gallery/countdown_reg_gallery.png.png"  style="opacity: 1;"onclick="cardUp(2)">
+                    <img class="gallery" src="assets/img/gallery/countdown_reg_gallery.png"  style="opacity: 1;"onclick="cardUp(2)">
                     <img class="gallery" src="assets/img/gallery/staff.png" onclick="cardUp(3)">
                     <a href="https://www.facebook.com/PACURHRBC2018/" target="_blank"><img class="gallery" src="assets/img/gallery/facebook.png"></a>
                     <a href="https://twitter.com/PACURHRBC2018" target="_blank"><img class="gallery" src="assets/img/gallery/twitter.png"></a>
@@ -159,9 +159,13 @@
                     <div class="sub-title" onclick="subOpen(this)"><span>Information & Logistics</span></div>
                     <!-- <a href="assets/img/RBC_Registration_Checklist.pdf" download> -->
                         <div class="sub-content">
-                            <div style="width: 100%; height:100%; overflow: scroll;">
+                            <div class="information">
+                                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQ58Lj29qHv8OqBlQWvrFOW3c41UlGPV_W49WJ_IkXtkGUsytcML0L2CRU1_SAIcBwfypEvAtkVTZH/pub?embedded=true"></iframe>
+                            </div>
+                            <div class="information">
                                 <a href="assets/img/RBC_Registration_Checklist.pdf" download><img src="assets/img/RBC_Registration_Checklist.jpg" style="width: 100%;"></a>
                             </div>
+                            
                         </div>
                     <!-- </a> -->
                 </div>
@@ -369,7 +373,7 @@
                 <a href="mailto:rbc.berkeley@gmail.com"><img src="assets/img/media/email.png"></a>
             </div>
         </div>
-        <div id = "notice">
+        <div id = "notice" onclick="noticeDisappear()">
             <span>Hi! All information may be subject to change before January.</span>
         </div>
     </div>

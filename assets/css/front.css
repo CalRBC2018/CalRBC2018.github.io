@@ -130,29 +130,29 @@
     }
 
     #front-pres {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
     #front-title {
-    	font-size: 2.2em;
+    	font-size: 2em;
     }
 
 	#front-desc {
-		font-size: 1.2em;
+		font-size: .7em;
 	}
 
 	#front-rbc {
-    	font-size: 2em;
+    	font-size: 1.2em;
 	}
 
 	#front-date {
 		text-align: center;
-		line-height: 3em;
-		font-size: 1em;
+		line-height: 2em;
+		font-size: .7em;
 	}
 
 	#front-date sup{
-		font-size: .475em;
+		font-size: .15em;
 	}
 
 	#front-border {
@@ -162,10 +162,7 @@
 	}
 
 	#up-button {
-		position: absolute;
-		bottom: 0px;
-		left: 50%;
-		transform: translateX(-50%);
+		position: relative;
 	}
 }
 
