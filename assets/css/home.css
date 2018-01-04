@@ -402,6 +402,21 @@ iframe {
 	color: black;
 }
 
+#reg-button {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .5em;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#reg-button:hover {
+	background-color: rgba(0, 0, 0, .2);
+	color: black;
+}
+
 /*Clicks*/
 #exit, .back, .sub-title, .chair-overlay {
 	cursor: pointer;
