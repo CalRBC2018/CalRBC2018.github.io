@@ -17,7 +17,6 @@
 
     <!-- Countdown -->
     <link rel="stylesheet" type="text/css" href="assets/css/countdown.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/countdown.js"></script>
 
     <!-- Fonts -->
@@ -390,7 +389,9 @@
         </div>
     </div>
 
-    <div id="cover" onclick="fileOut();" >
+    <div id="cover" onclick="fileOut();">
+        <![if IE]> <a href="edge.html" target="_blank">Hi! Unfortunately, some browsers are not compatible with our code, This means that our Conference Tab and About tab will not work. Here is a link to another page with the information that is missing!</a> <![endif]>
+        
         <div id="cover-container">
             <div id="exit" style="color: white; position: absolute; top: -25px; left: 0px;" onclick="fileOut();" >X</div>
             <iframe id="cover-Schedule" src="https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true"></iframe>
