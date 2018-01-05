@@ -402,12 +402,16 @@ iframe {
 	color: black;
 }
 
-#reg-button {
+.center {
 	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#reg-button {
     font-size: .5em;
+    margin: 2px;
     padding: 5px;
     border: 1px solid black;
 }
