@@ -153,7 +153,8 @@ function bioUp(name) {
 function fileOut() {
     $this = $(document.getElementById("cover"))
     $this.css("opacity", "0");
-    $this.children().css("display", "none");
+    $this.children("#cover-container").css("display", "none");
+    $this.children("#cover-bios").css("display", "none");
     // $this.children("#exit")
     // $this.children().children("#exit").css("display", "inherit");
     setTimeout(function(){ $this.css("z-index", "0"); }, 100);

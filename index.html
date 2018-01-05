@@ -390,7 +390,8 @@
     </div>
 
     <div id="cover" onclick="fileOut();">
-        <![if IE]> <a href="edge.html" target="_blank">Hi! Unfortunately, some browsers are not compatible with our code, This means that our Conference Tab and About tab will not work. Here is a link to another page with the information that is missing!</a> <![endif]>
+        <!--[if lte IE 11]> <a href="edge.html" target="_blank">Hi! Unfortunately, some browsers are not compatible with our code, This means that our Conference Tab and About tab will not work. Here is a link to another page with the information that is missing!</a> <![endif]-->
+        <a href="edge.html" target="_blank" style="padding: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 250px; width: 400px; color: black; border: 1px solid white; background-color: gray; font-size: 1.5em;">Hi! Unfortunately, some browsers are not compatible with our code. This means that our Conference Tab and About tab will not work. Here is a <span style="text-decoration: underline;">link</span> to another page with the information that is missing!</a>
         
         <div id="cover-container">
             <div id="exit" style="color: white; position: absolute; top: -25px; left: 0px;" onclick="fileOut();" >X</div>
