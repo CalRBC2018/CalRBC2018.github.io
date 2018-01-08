@@ -127,14 +127,35 @@ function reset(card) {
     $(sub_content).css("height", "0");
 }
 
+// function fileUp(name) {
+//     var $this = $(document.getElementById("cover"));
+//     var $children = $this.children("#cover-container");
+//     var $grandchildren = $children.children();
+//     $($children).css("display", "initial");
+//     $($grandchildren).css("display", "none");
+//     $($children.children("#cover-" + name)).css("display", "initial");
+//     $this.css({"z-index" : "1000000000", "opacity" : "1"});
+
+// }
+
+var map = {};
+map["Schedule"] = "https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true";
+map["Facilities"] = "https://docs.google.com/document/d/e/2PACX-1vTTs-bgmTuRv4H5wRHMs9PwfrejdE5vWjIoze6khQS8_9LyklnoTBfvmQczuU2EGOpxbchSTqVartva/pub?embedded=true";
+map["Philanthropy"] = "https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true";
+map["Boardroom"] = "https://docs.google.com/document/d/e/2PACX-1vRNpflVgT7hRisHWzy3xjH-_QPZfJxgWUvwJ2RPPj9xoupFU9eglI5AaSdOIAxvU71GHhQ2PwxQmbC9/pub?embedded=true";
+map["Dining"] = "https://docs.google.com/document/d/e/2PACX-1vQ3wpvf5CA1RFcTwgLR6kV_dpAYIvOB7zcffBp_ZI3Jy1-7ESFKWVpiiyaVnPHqsasPYmVmmPzXEVNA/pub?embedded=true";
+map["Safety"] = "https://docs.google.com/document/d/e/2PACX-1vSeQNxVIhKRXkkq_laERnknpzzYmWFVCHaItcblNq2FaRng0i58fsBnya3-ByDKwyPgcWvApYgQrJ1m/pub?embedded=true";
+map["Transportation"] = "https://docs.google.com/document/d/e/2PACX-1vSp5R_JrV3CO1bLzzhDuFOmWo39ZVJdqaNupRMb9wWT4-gn0tQQC5y33AJevqqwpUlkM_jPolHkQPNS/pub?embedded=true";
+map["Housing"] = "https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true";
+
+
 function fileUp(name) {
-    var $this = $(document.getElementById("cover"));
-    var $children = $this.children("#cover-container");
-    var $grandchildren = $children.children();
-    $($children).css("display", "initial");
-    $($grandchildren).css("display", "none");
-    $($children.children("#cover-" + name)).css("display", "initial");
-    $this.css({"z-index" : "1000000000", "opacity" : "1"});
+    var form = document.createElement("form");
+    form.method = "GET";
+    form.action = map[name];
+    form.target = "_blank";
+    document.body.appendChild(form);
+    form.submit();
 
 }
 
