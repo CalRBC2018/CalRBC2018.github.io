@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PACURH Regional Business Conference</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="assets/img/favicon.ico"> -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/nav.css" rel="stylesheet">
+    <link href="assets/css/front.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/home.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Countdown -->
+    <link rel="stylesheet" type="text/css" href="assets/css/countdown.css" />
+    <script type="text/javascript" src="assets/js/countdown.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100, 200, 900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
+</head>
+<body>
+    <div class = "page-wrapper" id = "page-wrapper" style="background-color: black;">
+        <div id = "front-background" onclick="up();">
+            <div id = "first-select">
+                <div id = "front-border">
+                    <div class = "front-words" id = "front-pres">UC Berkeley Presents:</div>
+                    <div class = "front-words" id = "front-title">Unstoppable Forces</div>
+                    <div class = "front-words" id = "front-desc">Mastering the Elements of Leadership</div>
+                    <div class = "front-words" id = "front-rbc">PACURH Regional Business Conference</div>
+                    <div class = "front-words" id = "front-date">February 23<sup>rd</sup>-25<sup>th</sup>, 2018</div>
+                </div>
+                <!-- <div class='countdown' id="countdown" style = "position: absolute; left: 50%; transform: translate(-50%, 25%);"" data-date="2018-02-23"></div> -->
+        
+                <div id = "up-button">Continue</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "page-wrapper" id="page">
+    <br>
+    <br>
+        <div class="card" id="Welcome"  style="transform: translate(-50%,-51%); opacity: 1;"> <!-- style="transform: translate(-50%,-51%); opacity: 1;" -->
+            <div id="welcome-title">Welcome <span id="welcome-title-end">to the PACURH Regional Business Conference!</span> </div>
+            <a href="https://tinyurl.com/rbc2018-eval" target="_blank">
+                <div class="welcome-card" id="welcome-count">
+                    <!-- Days until Conference: Feb. 23, 2018
+                    <div class='countdown' id="countdown2" data-date="2018-02-23"></div> -->
+                    Fill out our <span style="text-decoration: underline;">Evaluation Form!</span>
+                </div>
+            </a>
+
+            <div class="welcome-card" id="gallery">
+                <div id="gallery-inside">
+                    
+                    <!-- <img class="gallery" src="assets/img/gallery/countdown_gallery.png"  onclick="cardUp(2)"> -->
+                    <img class="gallery" src="assets/img/gallery/staff.png" style="opacity: 1;" onclick="cardUp(3)">
+                    <a href="https://www.facebook.com/PACURHRBC2018/" target="_blank"><img class="gallery" src="assets/img/gallery/facebook.png"></a>
+                    <a href="https://guidebook.com/g/calrbc2018/" target="_blank"><img class="gallery" src="assets/img/gallery/guidebook.png"></a>
+                    <a href="https://twitter.com/PACURHRBC2018" target="_blank"><img class="gallery" src="assets/img/gallery/twitter.png"></a>
+                    <a href="https://www.instagram.com/pacurh_rbc_2018/" target="_blank"><img class="gallery" src="assets/img/gallery/instagram.png"></a>
+
+                    
+                    
+
+                    <img class="gallery" src="assets/img/gallery/human_c.jpg">
+<!--                     <img class="gallery" src="assets/img/gallery/air.png">
+                    <img class="gallery" src="assets/img/gallery/campanile_bay.jpg">
+                    <img class="gallery" src="assets/img/gallery/earth.png"> -->
+                    <img class="gallery" src="assets/img/gallery/unit_1.jpg">
+                    <img class="gallery" src="assets/img/gallery/water.png">
+                    <img class="gallery" src="assets/img/gallery/sather_gate.jpg">
+                    <img class="gallery" src="assets/img/gallery/fire.png">
+                </div>
+            </div>
+            
+            <div class="welcome-card" id="quick-links">
+                <!-- Shortcuts
+                <div id="quick-ul">
+                    <ul>
+                        <li onclick = "cardUp(1)"> Conference Things</li>
+                        <li onclick = "cardUp(2)"> Registration</li>
+                        <li onclick = "cardUp(3)"> About</li>
+                        <li onclick = "cardUp(4)"> Contact</li>
+                        <li onclick = "cardUp(2)"> Registration</li>
+                        <li onclick = "cardUp(3)"> About</li>
+                        <li onclick = "cardUp(4)"> Contact</li>
+                    </ul>
+                </div> -->
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPACURHRBC2018%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPACURHRBC2018%2F&tabs=timeline&width=320&height=375&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+            </div>
+        </div>
+        <div class="card" id="Conference">
+            <div class="title"><img src="./assets/img/fire.jpg">Conference<img src="./assets/img/fire.jpg"></div>
+            <div class="content">
+                <div class="sub-page" onclick="fileUp(&quot;Schedule&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(228, 0, 2, .6);">
+                        <div class="sub-page-name">Schedule</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+                <div class="sub-page" onclick="fileUp(&quot;Facilities&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 0, 204, .6);">
+                        <div class="sub-page-name">Facilities & Hospitality</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+
+                <div class="sub-page" onclick="fileUp(&quot;Philanthropy&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 204, 29, .6);">
+                        <div class="sub-page-name">Philanthropy</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+                <div class="sub-page" onclick="fileUp(&quot;Boardroom&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(209, 209, 209, .6);">
+                        <div class="sub-page-name">Boardroom</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+                <div class="sub-page" onclick="fileUp(&quot;Dining&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(125, 0, 2, .6);">
+                        <div class="sub-page-name">Dining</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+
+                <div class="sub-page" onclick="fileUp(&quot;Safety&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 0, 113, .6);">
+                        <div class="sub-page-name">Safety & Sustainability</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+                <div class="sub-page" onclick="fileUp(&quot;Transportation&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(0, 82, 12, .6);">
+                        <div class="sub-page-name">Transportation</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+                <div class="sub-page" onclick="fileUp(&quot;Housing&quot;);">
+                    <div class="sub-page-overlay" style="background-color: rgba(183, 183, 183, .6);"">
+                        <div class="sub-page-name">Housing</div>
+                    </div>
+                    <img src="./assets/img/blank.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="Registration">
+            <div class="title"><img src="assets/img/water.jpg">Registration<img src="./assets/img/water.jpg"></div>
+            <div class="content">
+                <div class="sub-card" style="background-color: rgba(116, 194, 225, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <div class="sub-title" onclick="subOpen(this)"><span>Information & Logistics</span></div>
+                    <!-- <a href="assets/img/RBC_Registration_Checklist.pdf" download> -->
+                        <div class="sub-content">
+                            <div class="information">
+                                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQ58Lj29qHv8OqBlQWvrFOW3c41UlGPV_W49WJ_IkXtkGUsytcML0L2CRU1_SAIcBwfypEvAtkVTZH/pub?embedded=true"></iframe>
+                            </div>
+                            <div class="information">
+                                <a href="assets/img/RBC_Registration_Checklist.pdf" download><img src="assets/img/RBC_Registration_Checklist.jpg" style="width: 100%;"></a>
+                            </div>
+                            
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <!-- <div class="sub-title" onclick="subOpen(this)">RHA W-9 Form!</div> -->
+                    <div class="sub-title" onclick="subOpen(this)">Evaluation Form!</div>
+                    <div class="sub-content"> 
+                        <div class="center">
+                            <a href="https://tinyurl.com/rbc2018-eval" target="_blank"><div id="reg-button">Please fill out our Evaluation Form!</div></a>
+                            <!-- <a href="https://drive.google.com/file/d/17pGrwq05ydirQzXR_mAwki1JiftjoxOP/view?usp=sharing" target="_blank"><div id="reg-button"> RHA W9</div></a>
+                            <div id="reg-button"> Registration has closed for PACURH RBC 2018 at UC Berkeley </div> -->
+                        </div>
+                    <!-- <iframe id="JotFormIFrame-72896479984181" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/72896479984181" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no"> </iframe> 
+                        <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-72896479984181"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script> -->
+                    </div>
+                </div>
+                <div class="sub-card" style="background-color: rgba(1, 145, 250, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <div class="sub-title" onclick="subOpen(this)">Waivers</div>
+                    <div class="sub-content">
+                        <div class="center">
+                            <a href="https://form.jotform.com/73549347984171" target="_blank"><div id="reg-button"> PACURH Delegate Waiver</div></a>
+                            <a href="https://form.jotform.com/73548193684166" target="_blank"><div id="reg-button"> PACURH Parent Waiver</div></a>
+                            <a href="https://drive.google.com/file/d/17pGrwq05ydirQzXR_mAwki1JiftjoxOP/view?usp=sharing" target="_blank"><div id="reg-button"> RHA W9</div></a>
+                            <a href="https://drive.google.com/file/d/1SIHepAexuUo1hVKgqnGSeNWyuU4U_sIa/view?usp=sharing" target="_blank"><div id="reg-button"> UC Berkeley Waiver <div style="font-size: .75em;">*Please print the form out, have your entire delegation READ the FIRST page, then have everyone SIGN the SECOND page, and bring to conference. We will only need the SECOND page with signatures from all delegates.</div></div></a>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card" id="About">
+            <div class="title"><img src="assets/img/earth.jpg">About<img src="assets/img/earth.jpg"></div>       
+            <div class="content">
+                <div class="sub-card" style="background-color: rgba(211, 210, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <div class="sub-title" onclick="subOpen(this)">Staff!</div>
+                    <div class="sub-content" style="overflow: scroll; font-size: .3em;">
+                        <div class="chair">
+                            <div class="chair-overlay"  onclick="bioUp(&quot;Chelsea&quot;)">
+                                <div class="chair-name">Chelsea Ji</div>
+                                <div class="chair-position">Conference CoChair</div>
+                            </div>
+                            <img src="assets/img/team/Chelsea.jpg" onclick="bioUp(&quot;Chelsea&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;CJ&quot;)">
+                                <div class="chair-name">CJ Connolly</div>
+                                <div class="chair-position">Conference Co-Chair</div>
+                            </div>
+                            <img src="assets/img/team/CJ.jpg" onclick="bioUp(&quot;CJ&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Sandra&quot;)">
+                                <div class="chair-name">Sandra Walle</div>
+                                <div class="chair-position">Finance Chair</div>
+                            </div>
+                            <img src="assets/img/team/Sandra.jpg" onclick="bioUp(&quot;Sandra&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Rachel&quot;)">
+                                <div class="chair-name">Rachel Lin</div>
+                                <div class="chair-position">Housing Chair</div>
+                            </div>
+                            <img src="assets/img/team/Rachel.jpg" onclick="bioUp(&quot;Rachel&quot;)">
+                        </div>
+                        
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Danny&quot;)">
+                                <div class="chair-name">Danny Chu</div>
+                                <div class="chair-position">Technology and Media Chair</div>
+                            </div>
+                            <img src="assets/img/team/Danny.jpg" onclick="bioUp(&quot;Danny&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Amberlyn&quot;)">
+                                <div class="chair-name">Amberlyn Saw</div>
+                                <div class="chair-position">Philanthropy and Sponsorship Chair</div>
+                            </div>
+                            <img src="assets/img/team/Amberlyn.jpg" onclick="bioUp(&quot;Amberlyn&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Alma&quot;)">
+                                <div class="chair-name">Alma Avila</div>
+                                <div class="chair-position">Hospitality and Sustainability Chair</div>
+                            </div>
+                            <img src="assets/img/team/Alma.jpg" onclick="bioUp(&quot;Alma&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Billy&quot;)">
+                                <div class="chair-name">Billy Allocca</div>
+                                <div class="chair-position">Facilities and Logistics Chair</div>
+                            </div>
+                            <img src="assets/img/team/Billy.jpg" onclick="bioUp(&quot;Billy&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Desirée&quot;)">
+                                <div class="chair-name">Desirée Nayak</div>
+                                <div class="chair-position">Registration Chair</div>
+                            </div>
+                            <img src="assets/img/team/Desiree.jpg" onclick="bioUp(&quot;Desirée&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Jeah&quot;)">
+                                <div class="chair-name">Jeah Clemente</div>
+                                <div class="chair-position">Dining and Banquet Chair</div>
+                            </div>
+                            <img src="assets/img/team/Jeah.jpg" onclick="bioUp(&quot;Jeah&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Elyse&quot;)">
+                                <div class="chair-name">Elyse O'Neil</div>
+                                <div class="chair-position">Volunteer Chair</div>
+                            </div>
+                            <img src="assets/img/team/Elyse.jpg" onclick="bioUp(&quot;Elyse&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Jeet&quot;)">
+                                <div class="chair-name">Jeet Rai</div>
+                                <div class="chair-position">Safety and Transportation Chair</div>
+                            </div>
+                            <img src="assets/img/team/Jeet.jpg" onclick="bioUp(&quot;Jeet&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Alex&quot;)">
+                                <div class="chair-name">Alex Brown</div>
+                                <div class="chair-position">Awesome Advisor</div>
+                            </div>
+                            <img src="assets/img/team/Alex.jpg" onclick="bioUp(&quot;Alex&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Interns&quot;)">
+                                <div class="chair-name">Interns</div>
+                                <div class="chair-position">Being Interns.</div>
+                            </div>
+                            <img src="assets/img/team/Interns.jpg" onclick="bioUp(&quot;Interns&quot;)">
+                        </div>
+                        <div class="chair">
+                            <div class="chair-overlay" onclick="bioUp(&quot;Tanya&quot;)">
+                                <div class="chair-name">Tanya Koroyan</div>
+                                <div class="chair-position">Awesome Advisor</div>
+                            </div>
+                            <img src="assets/img/team/Tanya.jpg" onclick="bioUp(&quot;Tanya&quot;)">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="sub-card" style="background-color: rgba(21, 20, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <div class="sub-title" onclick="subOpen(this)">Cal NRHH & RHA!</div>
+                    <div class="sub-content" style="font-size: .5em;">
+                        <a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">NRHH</div>
+                                    <div class="chair-position">Golden Bear Chapter</div>
+                                </div>
+                                <img src="assets/img/NRHH.jpg">
+                            </div>
+                        </a>
+                        <a href="http://reslife.berkeley.edu/opportunities/rha" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">RHA</div>
+                                    <div class="chair-position">ResHalls</div>
+                                </div>
+                                <img src="assets/img/RHA.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-card" style="background-color: rgba(21, 210, 24, .5);">
+                    <div class="back" onclick="backSub(this)"> back </div>
+                    <div class="sub-title" onclick="subOpen(this)">Sponsors</div>
+                    <br>
+                    <div class="sub-content" style="overflow: scroll; font-size: .3em;">
+                        <a href="" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Residential Student Services Program</div>
+                                </div>
+                                <img src="assets/img/sponsors/rssp.png">
+                            </div>
+                        </a>
+                        <a href="http://reslife.berkeley.edu/opportunities/rha" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Residence Hall Assembly</div>
+                                </div>
+                                <img src="assets/img/sponsors/rha.png">
+                            </div>
+                        </a>
+                        <a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">National Residence Hall Honorary</div>
+                                </div>
+                                <img src="assets/img/sponsors/nrhh.png">
+                            </div>
+                        </a>
+                        <a href="https://www.pacurh.nacurh.org/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">PACURH</div>
+                                </div>
+                                <img src="assets/img/sponsors/pacurh.png">
+                            </div>
+                        </a>
+                        <a href="http://dining.berkeley.edu/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Cal Dining</div>
+                                </div>
+                                <img src="assets/img/sponsors/cd.png">
+                            </div>
+                        </a>
+                        <a href="http://catering.berkeley.edu/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Cal Catering</div>
+                                </div>
+                                <img src="assets/img/sponsors/cc.png">
+                            </div>
+                        </a>
+                        <a href="http://doubletree3.hilton.com/en/index.html" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">DoubleTree by Hilton</div>
+                                </div>
+                                <img src="assets/img/sponsors/dt.png">
+                            </div>
+                        </a>
+                        <a href="http://www.calbears.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Cal Athletics</div>
+                                </div>
+                                <img src="assets/img/sponsors/athletics.png">
+                            </div>
+                        </a>
+                        <a href="https://www.ocm.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">OCM</div>
+                                </div>
+                                <img src="assets/img/sponsors/ocm.png">
+                            </div>
+                        </a>
+                        <a href="https://www.kindsnacks.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Kind Snacks</div>
+                                </div>
+                                <img src="assets/img/sponsors/kind.png">
+                            </div>
+                        </a>
+                        <a href="http://www.sparklingice.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">ICE Drinks</div>
+                                </div>
+                                <img src="assets/img/sponsors/spice.png">
+                            </div>
+                        </a>
+                        <a href="http://www.tea1usa.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Tea One</div>
+                                </div>
+                                <img src="assets/img/sponsors/teaone.png">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/pokeparlor/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Poke Parlour $10</div>
+                                </div>
+                                <img src="assets/img/sponsors/poke.png">
+                            </div>
+                        </a>
+                        <a href="https://www.chipotle.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Chipotle</div>
+                                </div>
+                                <img src="assets/img/sponsors/chipotle.png">
+                            </div>
+                        </a>
+                        <a href="https://alumni.berkeley.edu/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Cal Alumni Association</div>
+                                </div>
+                                <img src="assets/img/sponsors/alumni.png">
+                            </div>
+                        </a>
+                        <a href="https://asuc.org/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">ASUC</div>
+                                </div>
+                                <img src="assets/img/sponsors/ASUC.png">
+                            </div>
+                        </a>
+                        <a href="https://www.bankofthewest.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Bank of the West</div>
+                                </div>
+                                <img src="assets/img/sponsors/bow.png">
+                            </div>
+                        </a>
+                        <a href="https://www.berkeleybowl.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Berkeley Bowl</div>
+                                </div>
+                                <img src="assets/img/sponsors/bbowl.png">
+                            </div>
+                        </a>
+                        <a href="https://www.fordgobike.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Ford GoBikes</div>
+                                </div>
+                                <img src="assets/img/sponsors/ford.png">
+                            </div>
+                        </a>
+                        <a href="https://www.gongchausa.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Gong Cha</div>
+                                </div>
+                                <img src="assets/img/sponsors/gong.png">
+                            </div>
+                        </a>
+                        <a href="http://www.littlegem.restaurant/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Little Gem</div>
+                                </div>
+                                <img src="assets/img/sponsors/lilgem.png">
+                            </div>
+                        </a>
+                        <a href="https://noahscatering.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Noah's Catering</div>
+                                </div>
+                                <img src="assets/img/sponsors/noahs.png">
+                            </div>
+                        </a>
+                        <a href="http://www.1992sharetea.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Share Tea</div>
+                                </div>
+                                <img src="assets/img/sponsors/sharetea.png">
+                            </div>
+                        </a>
+                        <a href="http://www.cheesenstuff.com/" target="_blank">
+                            <div class="chair">
+                                <div class="chair-overlay">
+                                    <div class="chair-name">Cheese n Stuff</div>
+                                </div>
+                                <img src="assets/img/sponsors/cns.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="Contact">
+            <div class="title"><img src="./assets/img/air.jpg">Contact<img src="./assets/img/air.jpg"></div>
+            <div class="content">
+                <div id="completed" style="display: none;">
+                    Thank you for contacting us! A chair will get back with you soon.
+                </div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNHhWZBNjGKC0_puMBF8QCQwXIumrClpxqPfhH57ZOWuInNg/viewform?embedded=true#responses" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLScNHhWZBNjGKC0_puMBF8QCQwXIumrClpxqPfhH57ZOWuInNg/formResponse" target="hiddenFrame">
+
+                    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+                    <h2>Have Any Questions? Ask 'em!</h2>
+
+                    <p class="caption">What's your name?</p>
+                    <input jscontroller="pxq3x"  jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="entry.1244775209" dir="auto" data-initial-dir="auto">
+                    
+                    <p class="caption">What's your email?</p>
+                    <input jscontroller="pxq3x" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="emailAddress" dir="auto" data-initial-dir="auto">
+                    
+                    <p class="caption">What's your institution/school?</p>
+                    <input jscontroller="pxq3x" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="entry.786901840" dir="auto" data-initial-dir="auto">
+                    <br>
+
+                    <p class="caption">How can we help you?</p>
+                    <textarea jscontroller="gZjhIf"  jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" jsshadow="" jsname="YPqjbf" required="" name="entry.649957690" dir="auto" data-initial-dir="auto"></textarea>
+                    <br>
+                    <input class="button" type="submit" value="Submit">
+                </form> -->
+            </div>
+        </div>
+        <div id = "social-media">
+            <span>Connect!</span>
+            <div class = "media">
+                <a href="https://www.facebook.com/PACURHRBC2018/" target="_blank"><img src="assets/img/media/facebook.png"></a>
+            </div>
+            <div class = "media">
+                <a href="https://twitter.com/PACURHRBC2018" target="_blank"><img src="assets/img/media/twitter.png"></a>
+            </div>
+            <div class = "media">
+                <a href="https://www.instagram.com/PACURH_RBC_2018/" target="_blank"><img src="assets/img/media/instagram.jpg"></a>
+            </div>
+            <div class = "media">
+                <a href="https://guidebook.com/g/calrbc2018/" target="_blank"><img src="assets/img/media/guidebook.png"></a>
+            </div>
+            <div class = "media">
+                <a href="mailto:pa_businessconf@nacurh.org"><img src="assets/img/media/email.png"></a>
+            </div>
+        </div>
+        <div id = "notice">
+            <div style="position: absolute; top: 5px; left: 5px; cursor: pointer;" onclick="noticeDisappear()"> x </div>
+            <!-- <div>Our Guidebook is ready:
+                <br>
+                <a href="http://guidebook.com/g/calrbc2018" target="_blank" style="text-decoration: underline;">Check it out!</a>
+            </div>
+            <div>Sneak Peak the 
+                <a href="https://drive.google.com/drive/folders/0B9r6dHhpET1bfkpjbUd2eDZGYUZPVzJROWJsdFFBNU1uaUhhRi1uUlhldHJDZWNkejBmaDA" target="_blank" style="text-decoration: underline;">bids!</a>
+            </div> -->
+            <div>Fill out our 
+                <a href="https://tinyurl.com/rbc2018-eval" style="text-decoration: underline;">Evaluation Form!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cover" onclick="fileOut();">
+        <!--[if lte IE 11]> <a href="edge.html" target="_blank">Hi! Unfortunately, some browsers are not compatible with our code, This means that our Conference Tab and About tab will not work. Here is a link to another page with the information that is missing!</a> <![endif]-->
+        <a href="edge.html" target="_blank" style="padding: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 250px; width: 400px; color: black; border: 1px solid white; background-color: gray; font-size: 1.5em;">Hi! Unfortunately, some browsers are not compatible with our code. This means that our Conference Tab and About tab will not work. Here is a <span style="text-decoration: underline;">link</span> to another page with the information that is missing!</a>
+        
+        <div id="cover-container">
+            <div id="exit" style="color: white; position: absolute; top: -25px; left: 0px;" onclick="fileOut();" >X</div>
+            <iframe id="cover-Schedule" src="https://docs.google.com/document/d/e/2PACX-1vSMacULzJYSLMDfahwREuNmeAaR0OvWdM_uRp3bm-0_JDOF8NCqISKkfhKWXQlqBfiX9eBxeXMNptDs/pub?embedded=true"></iframe>
+            <iframe id="cover-Facilities" src="https://docs.google.com/document/d/e/2PACX-1vTTs-bgmTuRv4H5wRHMs9PwfrejdE5vWjIoze6khQS8_9LyklnoTBfvmQczuU2EGOpxbchSTqVartva/pub?embedded=true"></iframe>
+            <iframe id="cover-Philanthropy" src="https://docs.google.com/document/d/e/2PACX-1vShWX57ZOexEgTiD9x5EBEfz-5UGHoRq4tjNPMN0aP-avwXyD8g-t5YUnow2QDuvvxntoDesjxnkl9y/pub?embedded=true"></iframe>
+            <iframe id="cover-Boardroom" src="https://docs.google.com/document/d/e/2PACX-1vRNpflVgT7hRisHWzy3xjH-_QPZfJxgWUvwJ2RPPj9xoupFU9eglI5AaSdOIAxvU71GHhQ2PwxQmbC9/pub?embedded=true"></iframe>
+            <iframe id="cover-Dining" src="https://docs.google.com/document/d/e/2PACX-1vQ3wpvf5CA1RFcTwgLR6kV_dpAYIvOB7zcffBp_ZI3Jy1-7ESFKWVpiiyaVnPHqsasPYmVmmPzXEVNA/pub?embedded=true"></iframe>
+            <iframe id="cover-Safety" src="https://docs.google.com/document/d/e/2PACX-1vSeQNxVIhKRXkkq_laERnknpzzYmWFVCHaItcblNq2FaRng0i58fsBnya3-ByDKwyPgcWvApYgQrJ1m/pub?embedded=true"></iframe>
+            <iframe id="cover-Transportation" src="https://docs.google.com/document/d/e/2PACX-1vSp5R_JrV3CO1bLzzhDuFOmWo39ZVJdqaNupRMb9wWT4-gn0tQQC5y33AJevqqwpUlkM_jPolHkQPNS/pub?embedded=true"></iframe>
+            <iframe id="cover-Housing" src="https://docs.google.com/document/d/e/2PACX-1vTNjokR3y8SRMnol2DCQ_gLLuodWRSM3hlm1BqhgLPfuWVRo0wqWo0C-dDAID_6RIWcDf4KZJtPt-pc/pub?embedded=true"></iframe>
+        </div>
+        <div id="cover-bios">
+            <div id="exit" style="color: white; position: absolute; top: -25px; left: 0px;" onclick="fileOut();" >X</div>
+            <div class="bio" id="Chelsea">
+                <img src="assets/img/team/Chelsea.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Chelsea Ji</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Conference Co-Chair</div>
+                </div>
+                <div id="bio">Hello! My name is Chelsea and I'm excited to serve as co-chair for the Regional Business Conference! I'm a third year studying Integrative Biology. I also serve as a Resident Assistant and Vice President of Recognitions for the Golden Bear Chapter of NRHH. My passion and involvement with PACURH began when I attended conferences as a NCC. I’ve always loved representing my school in boardroom and hearing about all the great things happening in residential communities across PACURH. Now I’m excited to bring the Regional Business Conference to Berkeley and show PACURH what Cal is all about. Our conference team has worked tirelessly to deliver a truly unique experience for you and I’m sure that it won’t disappoint! As always, go bears!</div>
+            </div>
+            <div class="bio" id="CJ">
+                <img src="assets/img/team/CJ.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> CJ Connolly</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Conference Co-Chair</div>
+                </div>
+                <div id="bio">Hey PACURH! I’m CJ and I am one of the Co-Conference Chairs for RBC 2018! I am a fourth year studying Psychology with plans of pursuing law school next fall. I also serve as the President of the Golden Bear Chapter for NRHH and as a Community and Leadership Assistant overseeing the Unit 3 Hall Association. I am extremely passionate about children and someday hope to make education more accessible and of higher quality around the world. Some of my other favorite things include boba, butterflies, playing Catan, watching Netflix and baking yummy desserts with my Co-Conference Chair Chelsea! We are all so excited for you all to spend some time with us in Berkeley this February. Please do not hesitate to reach out to us with any questions! Froggie Love!</div>
+            </div>
+            <div class="bio" id="Desirée">
+                <img src="assets/img/team/Desiree.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Desirée Nayak</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Registration Chair</div>
+                </div>
+                <div id="bio">Hey everyone, my name is Desirée Nayak and I am the Registration Chair for the PACURH Regional Business Conference, 2018. I am a sophomore at UC Berkeley, intending to pursue a degree in Cognitive Science. I am from Mumbai, India and lived there pretty much all my life, till I moved here for college. I love to travel and am also a certified scuba diver. When I am not overthinking everything and/ or contemplating life, you will usually find me watching law dramas or psychological thrillers. I am part of the Peer Review Board which is an organisation that deals with policy violations in the residence halls. I am also doing some interesting psychological research at our law school. I look forward to seeing and interacting with all of you (both virtually, through the (rather lengthy) registration form, and also in person, of course). I am very excited for the conference and really looking forward to February! </div>
+            </div>
+            <div class="bio" id="Danny">
+                <img src="assets/img/team/Danny.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Danny Chu</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> He/Him</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Technology & Media Chair</div>
+                </div>
+                <div id="bio">Hi y'all! You can call me Danny Or "you there" or "heyya handsome!" what every floats your boat. I am an Electrical Engineering and Computer Science Major, with an intended double in Cognitive Sciences and minoring in Data Science. If you like data structures, come enroll in Berkeley and take the class with me! I love a good meme or pun, so hit me up! We'll see where our adventure takes us, and look back on all the great meme-ories! </div>
+            </div>
+            <div class="bio" id="Rachel">
+                <img src="assets/img/team/Rachel.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Rachel Lin</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Housing Chair</div>
+                </div>
+                <div id="bio">Hey y’all! My name is Rachel Lin and I am the Housing Chair for RBC! I am a second-year student intending to double major in Business Administration and Cognitive Science. I’m an out of state student from the great state of Maryland, like twenty minutes outside Baltimore and an hour from Washington D.C. On campus, I’m involved in the student government, National Residence Hall Honorary, and Space Enterprise! In my free time, I love watching the TV show Survivor, petting cats, and drinking boba. Last year, I was RHA Rep for my residence hall, where I had the opportunity to attend RLC at USC, RBC at UoP, and NACURH at Purdue University. Can’t wait to see you all in February!!</div>
+            </div>
+            <div class="bio" id="Billy">
+                <img src="assets/img/team/Billy.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Billy Allocca</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> He/Him</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Facilities & Logistics Chair</div>
+                </div>
+                <div id="bio">Hey there!! I’m Billy Allocca, a sophomore at Cal, a Resident Assistant, avid dog lover, and Facilities and Logistics chair. I’m planning on majoring in Business Administration. My hometown is Seattle, Washington and some of my hobbies include hiking, exploring, adventures, binge-watching Parks and Recreation, and running. I’ve been involved with Residential Life ever since Hall Association as a freshman, through PACURH 2016, and now as an RA and chair for RBC! I’m so excited to share this amazing school with all of you at this conference - see you in February!</div>
+            </div>
+            <div class="bio" id="Jeet">
+                <img src="assets/img/team/Jeet.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Jeet Rai</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Transportation & Safety Chair</div>
+                </div>
+                <div id="bio">Hi! My name is Jeet Rai and I am the Transportation and Safety Chair for the Regional Business Conference. I am a second year at Cal and have declared a Political Science major with an intended Journalism minor. When I am not writing emails and attending meetings, I enjoy spontaneous adventures to Oregon, Nevada, the Berkeley Hills and San Francisco to stargaze and hike. I love learning new languages, pouring over different publications and jamming to music in my free time. On campus, I am the Director of Advocacy for the United Nations Association of Berkeley, a Distribution Analyst at The Daily Californian and the Student Supervisor at Unit 3 Residence Halls. As a freshman, I had the honor of serving as president of Hall Association. I love meeting new people and look forward to seeing you soon! </div>
+            </div>
+            <div class="bio" id="Elyse">
+                <img src="assets/img/team/Elyse.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Elyse O'Neill</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Volunteer Chair</div>
+                </div>
+                <div id="bio">Hello! My name is Elyse O’Neil and I am the Volunteer Chair for RBC. I am a senior at Cal majoring in Peace and Conflict Studies and minoring in Public Policy. When I’m not stressing out about classes, I enjoy being an active member of res life. I have served as an executive in the Residence Hall Assembly, and am currently a Community and Leadership Advisor and an active member of NRHH. I also enjoy reading, listening to podcasts, binging shows on Netflix, and spending time with friends. I am very excited for everyone to come to Berkeley for RBC. I know that you will all have an awesome time. Remember to be nice to the volunteers, and do not be afraid to ask them for help or food recommendations (there are so many awesome places to explore in this city!) </div>
+            </div>
+            <div class="bio" id="Alma">
+                <img src="assets/img/team/Alma.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Alma Avila</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Hospitality & Sustainability Chair</div>
+                </div>
+                <div id="bio">Hiiiii! My name is Alma Avila, I am the Hospitality and Sustainability Chair for the Regional Business Conference. I am a proud Latina from Southern California, and enjoy playing soccer. I am a sophomore, intended Business Administration and Media Studies. I think Res life is the Best life! As a freshman, I was a representative at Residence Hall Assembly which encouraged me to become part of NRHH. I am glad to be helping organize this conference for you all, and am excited that y’all be coming to UC Berkeley. Outside of academics I am involved in Greek life, Latino Business Student Association, Hermanas Unidas, and the Event Planning Association. Don’t hesitate to reach out! SC: @almaa120612</div>
+            </div>
+            <div class="bio" id="Sandra">
+                <img src="assets/img/team/Sandra.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Sandra Walle</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Finance Chair</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Sandra Walle and I am the Finance Chair for the Regional Business Conference. I am very passionate about Res Life and grateful that I have the opportunity to work with so many amazing peers to help make Cal a place students can call home. In the Res Halls I work as a Resident Assistant and also serve as the VP of Finance and Communications for the National Residence Hall Honorary (NRHH) Golden Bear Chapter. I am a third year student majoring in Public Health with a double minor in Spanish Literature and Public Policy. On campus I am involved with the Undergraduate Public Health Coalition, work as a Research Assistant in a Psychology lab and volunteer as a  Health Advocate through the Alameda Health System. In my free time I enjoy playing board games, tennis, grabbing coffee with friends, and exploring the bay area in search of cute and tasty brunch spots.  I am so excited to be a part of the conference planning team and can't wait to see you all in February! </div>
+            </div>
+            <div class="bio" id="Amberlyn">
+                <img src="assets/img/team/Amberlyn.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Amberlyn Saw</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Philanthropy & Sponsorship Chair</div>
+                </div>
+                <div id="bio">Hi everyone! My name is Amberlyn Saw and I am the Philanthropy and Sponsorships Chair. I’m a 3rd year double majoring in Business Administration and Molecular Environmental Biology with a concentration in Environment and Human Health. I’m a second-year RA in Unit 3, the place to be! In my free time, I love road tripping to national parks and spending time outdoors camping, backpacking, and running. If I’m not in my room napping, there’s a good chance I’m searching for the best chai latte in Berkeley, baking brownies in the kitchen, or procrastinating on homework by hiking in the Bay Area. On campus, I’m a mentor for Boost @Haas, a director for the ASUC Office of the CTO, and a member of National Residence Hall Honorary. I am beyond thrilled to be a part of this conference and I can’t wait to meet all of you in February!</div>
+            </div>
+            <div class="bio" id="Jeah">
+                <img src="assets/img/team/Jeah.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Jeah Clemente</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Dining & Banquet Chair</div>
+                </div>
+                <div id="bio">Hi! My name is Jeah Clemente and I am the Dining and Banquet Chair for this year’s RBC conference. I am a senior studying Integrative Biology and Global Public Health, and I intend to pursue medical school or a career in the health field in the near future. Throughout my time at Berkeley, I have been involved with Bears that Care, a peer education program promoting violence prevention and bystander intervention, the residence halls as an RA, and have done bio-physics and cognitive psychology research with a few professors. When I’m not busy with school and my extracurricular activities, I like to spend time with friends, explore the Bay Area, and try out yummy restaurants all around Berkeley. I’ve had a really great time working with everyone to plan this conference, and I look forward to meeting all of you!</div>
+            </div>
+            <div class="bio" id="Alex">
+                <img src="assets/img/team/Alex.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Alex Brown</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Advisor</div>
+                </div>
+                <div id="bio">Hey PACURH! My name is Alex Brown, and I’m one of the Co-Advisors for RBC 2018! I’m originally from Virginia, where I spent many childhood field trips learning how to make candles in Colonial Williamsburg. I received my BS in Psychology from Virginia Tech (GO HOKIES!), and also hold a MS in College Student Personnel. In my spare time, I put that psychology degree to use and taught my cat how to play fetch. I also create an audio-drama podcast about a group of people living in the middle of the Atlantic Ocean, and the spooky happenings they encounter! If you want to know more about that, just ask! Oh, and if you need anything during the conference, I’ll be there!</div>
+            </div>
+            <div class="bio" id="Tanya">
+                <img src="assets/img/team/Tanya.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Tanya Koroyan</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Advisor</div>
+                </div>
+                <div id="bio">Hi PACURH! My name is Tanya Koroyan and I’m one of the Co-Advisors for RBC 2018! I’m from the city of Newark, California, located in the beautiful Bay Area. I received my Bachelors in Sociology from San Jose State University (Spartan Up!), where I got my start in student leadership and PACURH. I continued my education at the University of San Francisco where I earned my Masters of Arts in Higher Education and Student Affairs. In my free time I like to draw, dance, drink chai lattes, and spend quality time with family and friends. Looking forward to seeing everyone in Berkeley for RBC 2018! Go Bears!</div>
+            </div>
+            <div class="bio" id="Interns">
+                <img src="assets/img/team/Interns.jpg">
+                <div id="info">
+                    <div id="name"><b>Name: </b> Jordan, Michelle, and Casey</div>
+                    <br>
+                    <div id="pronouns"><b>Pronouns: </b> He/Him, She/Her, and She/Her</div>
+                    <br>
+                    <div id="position"><b>Position: </b> Interns</div>
+                </div>
+                <div id="bio">Hello! These are interns. They love work! They went to PACURH's Regional Leadership Conference and loved it so they will be staying with us for the rest of the ride! Talk to them :) They won't bite!
+                    <br>
+                Hello all! My name is Jordan Jomsky and I am one of the interns. I am a first year majoring in something hopefully. I live on Clark Kerr Campus and I love going to school at UC Berkeley. Can't wait for the conference!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <div id="top-bar">
+        <!-- Logo -->
+        <div id="organization">
+            <div id="organization-logo" onclick="down()">
+                <img src="assets/img/logo2.jpg">
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav style="display: block">
+            <ul>
+                <li onclick=cardUp(0)>
+                    <div class="nav-title" id="nav-white">Home</div>
+                </li>
+                <li onclick=cardUp(1)>
+                    <div class="nav-title" id="nav-red">Conference</div>
+                    <ul>
+                        <li onclick="fileUp(&quot;Schedule&quot;);">
+                            <div class="nav-subtitle">Schedule</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Facilities&quot;);">
+                            <div class="nav-subtitle">Facilities/Hospitality</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Philanthropy&quot;);">
+                            <div class="nav-subtitle">Philanthropy</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Boardroom&quot;);">
+                            <div class="nav-subtitle">Boardroom</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Dining&quot;);">
+                            <div class="nav-subtitle">Dining</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Safety&quot;);">
+                            <div class="nav-subtitle">Safety/Sustainability</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Transportation&quot;);">
+                            <div class="nav-subtitle">Transportation</div>
+                        </li>
+                        <li onclick="fileUp(&quot;Housing&quot;);">
+                            <div class="nav-subtitle">Housing</div>
+                        </li>
+                    </ul>
+                </li>
+                <li onclick=cardUp(2)>
+                    <div class="nav-title" id="nav-blue">Registration</div>
+                </li>
+                <li onclick=cardUp(3)>
+                    <div class="nav-title" id="nav-green">About</div>
+                </li>
+                <li onclick=cardUp(4)>
+                    <div class="nav-title" id="nav-grey">Contact</div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+
+
+    
+</body>
+</html>
